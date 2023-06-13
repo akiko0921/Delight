@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #fdfdfd;
+    font-weight: normal;
+    font-feature-settings: "palt";
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    font-size: 17px;
+    letter-spacing: 0.1em;
+}
+/* 
+html {
+    overflow: auto;
+}
+
+body {
+    overflow: hidden;
+    min-width: 900px;
+} */
+
+span,
+a {
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
+    color: #fdfdfd;
+    letter-spacing: 0.1em;
+}
+
+.gray_text {
+    color: #707070;
+}
+
+.gold_text {
+    color: #c09f5c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+main {
+    background-color: #fdfdfd;
+    width: 100vw;
+}
+
+/* .wrapper {
+    max-width: 1000px;
+} */
+
+.header_wrap {
+    padding: 25px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pc_nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pc_nav ul li {
+    font-size: 16px;
+}
+
+.pc_nav ul li + li {
+    margin-left: 50px;
+}
+
+.header_logo {
+    width: 200px;
+}
+
+/* メイン */
+
+/* フッター */
+
+@media screen and (max-width: 1100px) {
+}
+
+@media screen and (max-width: 767px) {
+}
