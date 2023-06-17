@@ -1,0 +1,749 @@
+@charset "utf-8";
+
+header,
+.plan_top {
+    background-color: #f7f3e9;
+}
+
+.header_top {
+    display: flex;
+}
+
+.header_nav {
+    position: absolute;
+    top: 12%;
+    right: 7%;
+}
+
+.shop_nav ul {
+    height: 50%;
+}
+
+.header_nav li {
+    padding: 12% 0;
+}
+
+.header_nav li a {
+    color: #707070;
+    font-size: 15x;
+}
+
+.hum_nav ul li {
+    padding: 28px 0;
+    color: #707070;
+}
+
+.under_title {
+    font-size: 41px;
+    padding-top: 200px;
+    position: relative;
+    z-index: 2;
+}
+
+.title_accesary {
+    padding-bottom: 270px;
+    position: relative;
+    top: -54px;
+    margin: 0 auto;
+    width: 152px;
+    z-index: 1;
+}
+
+.plan_top {
+    text-align: center;
+}
+
+.plice_text {
+    background-color: #c09f5d;
+    padding: 18px 21px;
+    display: inline-block;
+    font-size: 23px;
+}
+
+.plice_sen {
+    padding: 36px 0 290px;
+    line-height: 1.6;
+}
+
+.plan_sen_big {
+    font-size: 27px;
+}
+
+.plan_sen_middle {
+    font-size: 21px;
+}
+
+.plan_sen_red {
+    color: #801b30;
+    font-size: 37px;
+}
+
+.plan_bottom {
+    background-color: #fdfdfd;
+}
+
+.plan_bottom::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    width: 517px;
+    height: 250px;
+    border-radius: 251px 256px 0 0;
+    background: inherit;
+    transform: translate(-50%, 50%);
+    bottom: 276px;
+    z-index: 1;
+}
+
+.entry_price {
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    top: -120px;
+}
+
+.entry_price_name {
+    font-size: 35px;
+}
+
+.entry_price_en {
+    font-size: 57px;
+    color: #801b30;
+    padding: 15px 0 80px;
+}
+
+.entry_price_mark {
+    font-size: 25px;
+}
+
+.plan_text {
+    text-align: center;
+    font-size: 20px;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 250px 0 55px;
+}
+
+.plan {
+    min-width: 20%;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    border-radius: 0 0 30px 0;
+}
+
+.plan_plan {
+    font-size: 23px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.plan_name {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plan_border {
+    border: #fdfdfd solid 1px;
+    width: 108px;
+    margin: 40px auto;
+}
+
+.plan_name_regular {
+    font-size: 27px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plan_plan_regular {
+    font-size: 21px;
+    text-align: center;
+    padding-top: 10px;
+}
+.flag {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -170px;
+    left: 35%;
+}
+
+.flag_img {
+    width: 25px;
+}
+
+.flag_text {
+    font-size: 20px;
+}
+
+.plan_name_nm {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.plan_and {
+    font-size: 18px;
+}
+
+.plan_name_onetime {
+    font-size: 35px;
+    text-align: center;
+}
+
+.plan_kakko {
+    font-size: 26px;
+    text-align: center;
+}
+
+.plan_name_wrap {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.price {
+    color: #801b30;
+    font-size: 52px;
+    text-align: center;
+    padding: 48px 0 68px;
+}
+
+.price_yen {
+    font-size: 25px;
+}
+
+.price_month {
+    font-size: 17px;
+}
+
+.plan_content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.q {
+    font-size: 16px;
+}
+
+.by {
+    font-size: 12px;
+}
+
+.a_times {
+    font-size: 25px;
+    padding-left: 64px;
+}
+
+.a_hour {
+    font-size: 27px;
+    padding-left: 40px;
+}
+
+.small_text {
+    font-size: 13px;
+    text-align: center;
+}
+
+.onetime_text {
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.35;
+    margin: 0 auto;
+}
+
+.price_onetime {
+    padding-bottom: 36px;
+}
+
+.plan_content_bottom {
+    padding: 36px 20px 86px;
+}
+
+.plan::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    width: 220px;
+    height: 110px;
+    border-radius: 110px 110px 0 0;
+    background: #c09f5c;
+    transform: translate(-50%, 50%);
+    top: -164px;
+    opacity: 0.8;
+}
+
+.officer {
+    background: linear-gradient(
+        180deg,
+        rgba(192, 159, 92, 0.8),
+        rgba(251, 250, 247, 0.8)
+    );
+}
+
+.officer::before {
+    background: #c09f5c;
+}
+
+.vip {
+    background: linear-gradient(
+        180deg,
+        rgba(250, 205, 122, 0.8),
+        rgba(251, 250, 247, 0.8)
+    );
+}
+
+.vip::before {
+    background: #facd7a;
+}
+
+.regular {
+    background: linear-gradient(
+        180deg,
+        rgba(244, 178, 44, 0.8),
+        rgba(251, 250, 247, 0.8)
+    );
+}
+
+.regular::before {
+    background: #f4b22c;
+}
+
+.nm {
+    background: linear-gradient(
+        180deg,
+        rgba(199, 164, 95, 0.8),
+        rgba(251, 250, 247, 0.8)
+    );
+}
+
+.nm::before {
+    background: #c7a45f;
+}
+
+.onetime {
+    background: linear-gradient(
+        180deg,
+        rgba(122, 113, 95, 0.8),
+        rgba(251, 250, 247, 0.8)
+    );
+}
+
+.onetime::before {
+    background: #7a715f;
+}
+
+.plan_hover_title {
+    display: none;
+    font-family: bold;
+    text-align: center;
+    padding: 10px 0 15px;
+    line-height: 1.6;
+}
+
+.plan_hover_text {
+    display: none;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.plan:hover {
+    position: relative;
+    bottom: 50px;
+}
+
+.plan:hover + .plan_hover_titles {
+    display: block;
+}
+
+.plan_sen {
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 1029px;
+    margin: 0 auto;
+}
+
+.plan_sen_span {
+    font-size: 25px;
+}
+
+.exam_top {
+    max-width: 1000px;
+    font-size: 16px;
+    margin: 81px auto 57px;
+}
+
+.exams {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.exam_wrap {
+    display: flex;
+}
+
+.exam_circle_text {
+    font-size: 20px;
+    line-height: 1.7;
+    display: inline-grid;
+    border: 1px #c09f5d solid;
+    width: 304px;
+    height: 304px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+.noon_img,
+.night_img {
+    height: 225px;
+}
+
+.night_img {
+    position: relative;
+    right: 30px;
+}
+
+.noon_img {
+    position: relative;
+    left: 30px;
+}
+
+.exam_hour {
+    font-size: 13px;
+}
+
+.exam_arrow {
+    width: 10px;
+    padding: 5px 0;
+}
+
+.exam_hour_plus {
+    font-size: 15px;
+    color: #801b30;
+    position: relative;
+    right: 20px;
+}
+
+.exam_text {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2;
+    padding-top: 17px;
+}
+
+.exam_plus_text {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-top: 37px;
+}
+
+.plan_more {
+    border: 1px solid #c09f5c;
+    font-size: 19px;
+    width: 630px;
+    margin: 150px auto;
+    text-align: center;
+    padding: 75px;
+}
+
+@media screen and (max-width: 767px) {
+    .header_nav {
+        display: none;
+    }
+
+    /* .shop_nav ul {
+        height: 50%;
+    }
+
+    .header_nav li {
+        padding: 12% 0;
+    }
+
+    .header_nav li a {
+        color: #707070;
+        font-size: 15x;
+    }
+
+    .hum_nav ul li {
+        padding: 28px 0;
+        color: #707070;
+    } */
+
+    .under_title {
+        font-size: 25px;
+        padding-top: 160px;
+    }
+
+    .title_accesary {
+        padding-bottom: 92px;
+        top: -35px;
+        width: 100px;
+    }
+
+    .plice_text {
+        width: 258px;
+        border-radius: 22px;
+        padding: 17px 24px;
+        font-size: 15px;
+        box-sizing: border-box;
+        line-height: 1.7;
+    }
+
+    .plice_sen {
+        padding: 29px 0 200px;
+        font-size: 15px;
+    }
+
+    .plan_sen_big {
+        font-size: 18px;
+    }
+
+    .plan_sen_middle {
+        font-size: 15px;
+    }
+
+    .plan_sen_red {
+        font-size: 28px;
+    }
+
+    .plan_bottom::before {
+        width: 294px;
+        height: 147px;
+        border-radius: 251px 256px 0 0;
+        bottom: 524px;
+    }
+
+    .entry_price {
+        top: -80px;
+    }
+
+    .entry_price_name {
+        font-size: 19px;
+    }
+
+    .entry_price_en {
+        font-size: 44px;
+        padding: 15px 0 80px;
+    }
+
+    .entry_price_mark {
+        font-size: 21px;
+    }
+
+    .plan_text {
+        font-size: 18px;
+    }
+
+    .regular {
+        order: -1;
+    }
+
+    .plans {
+        display: flex;
+        flex-direction: column;
+        padding: 150px 0 55px;
+    }
+
+    .plan {
+        width: 288px;
+        margin: 100px auto;
+    }
+
+    .plan_plan {
+        font-size: 18px;
+    }
+
+    .plan_name {
+        font-size: 23px;
+    }
+
+    .plan_hover_title {
+        font-size: 13px;
+    }
+
+    .plan_hover_title,
+    .plan_hover_text {
+        display: block;
+    }
+
+    .plan_border {
+        margin: 25px auto 10px;
+    }
+
+    .plan_name_regular {
+        font-size: 23px;
+    }
+
+    .plan_plan_regular {
+        font-size: 18px;
+    }
+
+    .flag_img {
+        width: 25px;
+    }
+
+    .flag_text {
+        font-size: 12px;
+    }
+
+    .plan_name_nm {
+        font-size: 17px;
+    }
+
+    .plan_and {
+        font-size: 17px;
+    }
+
+    .plan_name_onetime {
+        font-size: 23px;
+    }
+
+    .plan_kakko {
+        font-size: 23px;
+    }
+
+    .plan_name_wrap {
+        top: -20px;
+    }
+
+    .price {
+        font-size: 40px;
+        padding: 28px 0 13px;
+    }
+
+    .price_yen {
+        font-size: 20px;
+    }
+
+    .price_month {
+        font-size: 15px;
+    }
+
+    .plan_content {
+        padding: 20px;
+    }
+
+    .q {
+        font-size: 14px;
+    }
+
+    .a_times {
+        font-size: 18px;
+        padding-left: 64px;
+    }
+
+    .a_hour {
+        font-size: 18px;
+        padding-left: 40px;
+    }
+
+    .small_text {
+        font-size: 12px;
+    }
+
+    .onetime_text {
+        font-size: 13px;
+    }
+
+    .price_onetime {
+        padding-bottom: 36px;
+    }
+
+    .plan_content_bottom {
+        padding: 0px 20px 27px;
+    }
+
+    .plan::before {
+        width: 202px;
+        height: 91px;
+        border-radius: 101px 101px 0 0;
+        top: -136px;
+    }
+
+    .plan_sen {
+        font-size: 14px;
+        min-width: 300px;
+        padding: 35px;
+    }
+
+    .plan_sen_span {
+        font-size: 16px;
+    }
+
+    .exam_top {
+        font-size: 12px;
+        margin: 63px 0 42px 43px;
+    }
+
+    .exams {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exam {
+        min-width: 250px;
+        margin: 0 auto;
+    }
+
+    .exam_bottom {
+        padding-left: 11%;
+    }
+
+    .exam_circle_text {
+        font-size: 14px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .noon_img,
+    .night_img {
+        height: 164px;
+    }
+
+    .night_img {
+        right: 25px;
+    }
+
+    .noon_img {
+        left: 33px;
+    }
+
+    .exam_hour {
+        font-size: 10px;
+    }
+
+    .exam_arrow {
+        width: 6px;
+    }
+
+    .exam_hour_plus {
+        font-size: 10px;
+    }
+
+    .exam_text {
+        font-size: 15px;
+        padding: 25px 0 85px;
+    }
+
+    .exam_plus_text {
+        font-size: 15px;
+    }
+
+    .plan_more {
+        font-size: 11px;
+        width: 261px;
+        margin: 58px auto 100px;
+        padding: 21px;
+    }
+}

@@ -127,14 +127,6 @@
     }
 }
 
-.header_logo {
-    position: fixed;
-    top: 0;
-    left: 48px;
-    width: 128px;
-    z-index: 100;
-}
-
 .shop_nav {
     position: absolute;
     top: 12%;
@@ -154,102 +146,6 @@
 }
 
 /* ハンバーガー */
-.hum_btn {
-    position: absolute;
-    top: 2%;
-    right: 7%;
-    display: block;
-    height: 20px;
-    cursor: pointer;
-    z-index: 999;
-    background: #ffffff;
-    border-radius: 45px;
-    width: 89px;
-    height: 89px;
-}
-
-.hum_btn span,
-.hum_btn span::before,
-.hum_btn span::after {
-    display: block;
-    width: 39px;
-    height: 1px;
-    border-radius: 1px;
-    background: #c09f5c;
-    transition: 0.3s;
-}
-
-.hum_btn span::before,
-.hum_btn span::after {
-    content: "";
-    position: absolute;
-}
-
-.hum_btn span {
-    position: relative;
-    top: 45px;
-    left: 25px;
-}
-
-.hum_btn span::before {
-    bottom: 10px;
-}
-
-.hum_btn span::after {
-    top: 10px;
-}
-
-/* ハンバーガー閉じる */
-
-.hum_btn.open {
-    background: #c09f5c;
-    border-radius: 45px;
-    width: 89px;
-    height: 89px;
-}
-
-.hum_btn.open span {
-    background: transparent;
-}
-
-.hum_btn.open span::before {
-    bottom: 0;
-    transform: rotate(45deg);
-    background: #fdfdfd;
-}
-
-.hum_btn.open span::after {
-    top: 0;
-    transform: rotate(135deg);
-    background: #fdfdfd;
-}
-
-/* ハンバーガーメニュー */
-
-.hum_nav ul li {
-    padding: 28px 0;
-    color: #707070;
-}
-
-.hum_nav {
-    position: fixed;
-    z-index: 50;
-    top: 10%;
-    right: -120%;
-    transition: all 1.2s;
-    max-height: 650px;
-    text-align: center;
-    padding-bottom: 56px;
-}
-
-/* .hum_back {
-    background-color: #fdfdfd;
-    width: 100vw;
-} */
-
-.hum_nav.active {
-    right: 12px;
-}
 
 .taiken_btn {
     position: absolute;
@@ -268,106 +164,6 @@
     right: 0;
     z-index: 999;
     height: 36px;
-}
-
-/*== 矢印の線がループして伸縮 */
-
-.btnline {
-    /*線の基点とするためrelativeを指定*/
-    position: relative;
-    /*リンクの形状*/
-    color: #333;
-    padding: 10px 0;
-    display: inline-block;
-    text-decoration: none;
-    outline: none;
-}
-
-/*線の設定*/
-.btnline::before {
-    content: "";
-    /*絶対配置で線の位置を決める*/
-    position: absolute;
-    bottom: 0;
-    /*線の形状*/
-    width: 100%;
-    height: 1px;
-}
-
-/*矢印の設定*/
-.btnline::after {
-    content: "";
-    /*絶対配置で線の位置を決める*/
-    position: absolute;
-    bottom: -4px;
-    /*矢印の形状*/
-    width: 8px;
-    height: 8px;
-    transform: rotate(45deg);
-}
-
-.gold_arrow::after {
-    border-top: 1px solid #c09f5c;
-    border-right: 1px solid #c09f5c;
-}
-
-.gold_arrow::before {
-    background: #c09f5c;
-}
-
-.white_arrow::after {
-    border-top: 1px solid #fdfdfd;
-    border-right: 1px solid #fdfdfd;
-}
-
-.white_arrow::before {
-    background: #fdfdfd;
-}
-
-/*線と矢印を繰り返しアニメーション*/
-.btnline::before {
-    animation: arrowlong01 2s ease infinite;
-}
-.btnline::after {
-    animation: arrowlong02 2s ease infinite;
-}
-
-@keyframes arrowlong01 {
-    0% {
-        width: 0;
-        opacity: 0;
-    }
-    20% {
-        width: 0;
-        opacity: 1;
-    }
-    80% {
-        width: 105%;
-        opacity: 1;
-    }
-    100% {
-        width: 105%;
-        opacity: 0;
-    }
-}
-
-@keyframes arrowlong02 {
-    0% {
-        left: 0;
-        opacity: 0;
-    }
-    20% {
-        left: 0;
-        opacity: 1;
-    }
-    80% {
-        left: 103%;
-        opacity: 1;
-    }
-    100% {
-        left: 103%;
-        opacity: 0;
-    }
 }
 
 .container {
@@ -807,7 +603,7 @@
 
 footer {
     background-image: url(../images/footer.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -880,7 +676,8 @@ footer {
 
 .sp_main,
 .sp_header_logo,
-.sp_ni {
+.sp_ni,
+.sp_footer_nav {
     display: none;
 }
 
@@ -898,14 +695,6 @@ footer {
     .sp_main {
         display: block;
         width: 100vw;
-    }
-
-    .sp_header_logo {
-        display: block;
-        width: 56px;
-        position: fixed;
-        top: 6px;
-        left: 14px;
     }
 
     .main_title {
@@ -1260,72 +1049,6 @@ footer {
         border-radius: 0 0 17px 0;
         margin: 0 auto;
         display: block;
-        font-size: 12px;
-    }
-
-    footer {
-        background-image: url(../images/sp_footer.png);
-        background-size: cover;
-    }
-
-    .footer_logo {
-        width: 24.3%;
-        margin: 0 auto;
-    }
-
-    .footer_top {
-        padding-top: 24px;
-    }
-
-    .address {
-        text-align: center;
-    }
-
-    .out_logo {
-        display: flex;
-        justify-content: center;
-    }
-
-    .out_logo_img {
-        width: 30px;
-        padding: 30px;
-    }
-
-    .footer_nav {
-        display: none;
-    }
-
-    .sp_nav_top,
-    .sp_nav_bottom {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 62.5%;
-        margin: 0 auto;
-    }
-
-    .sp_nav_topa {
-        font-size: 14px;
-        display: block;
-        background-color: #c09f5c;
-        width: 106px;
-        height: 36px;
-        border-radius: 53px 53px;
-        box-sizing: border-box;
-        padding: 12px;
-        margin: 9px 15px;
-        text-align: center;
-    }
-
-    .sp_nav_bottoma {
-        font-size: 14px;
-    }
-
-    .sp_nav_bottom {
-        margin: 40px auto 20px;
-    }
-
-    .small {
         font-size: 12px;
     }
 }
