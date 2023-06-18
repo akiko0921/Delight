@@ -381,7 +381,8 @@ footer {
 .sp_main,
 .sp_header_logo,
 .sp_ni,
-.sp_footer_nav {
+.sp_footer_nav,
+.sp_br {
     display: none;
 }
 
@@ -461,5 +462,9 @@ footer {
 
     .small {
         font-size: 12px;
+    }
+
+    .sp_br {
+        display: block;
     }
 }

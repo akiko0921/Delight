@@ -398,7 +398,7 @@
     background-color: #477658;
 }
 
-.green:hover {
+.shop_btn.green:hover {
     background-color: #fdfdfd;
     color: #477658;
     transition: 0.7s;
@@ -409,7 +409,7 @@
     background-color: #7f4d72;
 }
 
-.purple:hover {
+.shop_btn.purple:hover {
     background-color: #fdfdfd;
     color: #7f4d72;
     transition: 0.7s;
@@ -420,7 +420,7 @@
     background-color: #303967;
 }
 
-.purple:hover {
+.shop_btn.blue:hover {
     background-color: #fdfdfd;
     color: #303967;
     transition: 0.7s;
@@ -431,7 +431,7 @@
     background-color: #801b30;
 }
 
-.purple:hover {
+.shop_btn.red:hover {
     background-color: #fdfdfd;
     color: #801b30;
     transition: 0.7s;
@@ -688,7 +688,8 @@ footer {
     .main_text,
     .dragon,
     .scrolldown1,
-    .taiken_btn {
+    .taiken_btn,
+    .header_top {
         display: none;
     }
 

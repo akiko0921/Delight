@@ -1,0 +1,742 @@
+@charset "utf-8";
+header,
+main,
+footer,
+.container {
+    background-color: #f7f3e9;
+}
+
+.header_top {
+    display: flex;
+    position: relative;
+    top: 20px;
+    max-width: 357px;
+    margin: 0 auto;
+}
+
+.header_mark {
+    padding: 12px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.header_nav {
+    position: absolute;
+    top: 10%;
+    right: 7%;
+}
+
+.shop_nav ul {
+    height: 50%;
+}
+
+.header_nav li {
+    padding: 7% 0;
+}
+
+.header_nav li a {
+    color: #707070;
+    font-size: 15x;
+}
+
+.hum_nav ul li {
+    padding: 28px 0;
+    color: #707070;
+}
+
+.under_title {
+    font-size: 41px;
+    padding-top: 200px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.title_accesary {
+    padding-bottom: 270px;
+    position: relative;
+    top: -54px;
+    margin: 0 auto;
+    width: 285px;
+    z-index: 1;
+}
+
+.information {
+    background-color: #477658;
+    position: relative;
+    margin-top: 500px;
+}
+
+.information::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    width: 572px;
+    height: 266px;
+    border-radius: 300px 300px 0 0;
+    background: inherit;
+    transform: translate(-50%, 50%);
+    top: -340px;
+    z-index: 1;
+}
+
+.shop_slide {
+    position: relative;
+}
+
+.shop_btn {
+    text-align: center;
+    width: 297px;
+    height: 297px;
+    border-radius: 50%;
+    display: block;
+    padding-top: 45%;
+    font-size: 29px;
+    color: #fdfdfd;
+    box-sizing: border-box;
+}
+
+.shop_slide img {
+    opacity: 0.47;
+}
+
+.shop_slide_wrapper {
+    position: relative;
+    max-height: 850px;
+    padding-bottom: 16%;
+}
+
+.shop_btn_wrapper {
+    position: absolute;
+    top: 24%;
+    left: 23%;
+    transform: translateX(-50%);
+}
+
+.shop_addresses {
+    display: flex;
+    position: relative;
+    left: 40%;
+    top: 15px;
+    max-width: 60%;
+}
+
+.shop_number {
+    font-size: 16px;
+}
+
+.shop_address {
+    font-size: 23px;
+    padding-left: 5%;
+}
+
+.green {
+    background-color: #477658;
+}
+
+.green:hover {
+    background-color: #fdfdfd;
+    color: #477658;
+    transition: 0.7s;
+    opacity: 0.8;
+}
+
+.purple {
+    background-color: #7f4d72;
+}
+
+.purple:hover {
+    background-color: #fdfdfd;
+    color: #7f4d72;
+    transition: 0.7s;
+    opacity: 0.8;
+}
+
+.blue {
+    background-color: #303967;
+}
+
+.blue:hover {
+    background-color: #fdfdfd;
+    color: #303967;
+    transition: 0.7s;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: #801b30;
+}
+
+.red:hover {
+    background-color: #fdfdfd;
+    color: #801b30;
+    transition: 0.7s;
+    opacity: 0.8;
+}
+
+/* 神保町 */
+
+.shop_top {
+    position: relative;
+    z-index: 3;
+    top: -100px;
+}
+
+.shop_title {
+    text-align: center;
+    font-size: 41px;
+}
+
+.jinbocho_accesary {
+    width: 137px;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+}
+
+.info_addresses {
+    display: flex;
+    position: relative;
+    top: -105px;
+    z-index: 3;
+    max-width: 535px;
+    margin: 0 auto;
+}
+
+.info_shop_number {
+    font-size: 16px;
+}
+
+.info_shop_address {
+    font-size: 18px;
+    padding-left: 3%;
+    line-height: 1.2;
+}
+
+.info_access {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -70px;
+    z-index: 3;
+}
+
+.info_slider_text {
+    font-size: 34px;
+    text-shadow: 0 1px 3px rgba(69, 5, 5, 0.8);
+    text-align: center;
+    position: relative;
+    top: -145px;
+}
+
+.shop_under_slide img {
+    opacity: 1;
+}
+
+.info_wrap {
+    background-color: #a9bfb1;
+    position: relative;
+    top: -60px;
+}
+
+.info_wrap::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    width: 411px;
+    height: 205px;
+    border-radius: 300px 300px 0 0;
+    background: inherit;
+    transform: translate(-50%, 50%);
+    top: -220px;
+    z-index: 1;
+}
+
+.info_name {
+    position: relative;
+    top: -25px;
+    z-index: 3;
+    padding-bottom: 120px;
+}
+
+.info_top {
+    font-size: 31px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.info_accesary {
+    width: 129px;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    z-index: 1;
+}
+
+.shop_info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.shop_info:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.info_title {
+    font-size: 28px;
+    width: 30%;
+    position: relative;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.info_title::before {
+    position: absolute;
+    border: 1px solid #367755;
+    border-radius: 51%;
+    width: 225px;
+    height: 225px;
+    content: "";
+    top: -100px;
+}
+
+/* .info_title::after {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 120%;
+    content: "";
+    background-color: #a9bfb1;
+    z-index: 2;
+}
+
+.info_title:nth-child(2n + 1)::after {
+    top: -35%;
+    left: 165px;
+}
+
+.info_title:nth-child(2n)::after {
+    top: -35%;
+    left: -100px;
+} */
+
+.info_text {
+    font-size: 18px;
+    width: 50%;
+    line-height: 2.3;
+    padding: 10px;
+}
+
+.green_text {
+    color: #367755;
+}
+
+.btn {
+    background: #c09f5c;
+    border-radius: 0 0 30px 0;
+    border: none;
+}
+
+.reserve_btn {
+    width: 658px;
+    height: 100px;
+    display: block;
+    margin: 200px auto;
+}
+
+.reserve_btn_text {
+    font-size: 25px;
+}
+
+/* 赤坂店 */
+.akasaka_information::before {
+    background: inherit;
+}
+
+.akasaka_information {
+    background-color: #7f4d72;
+}
+
+.akasaka_info_address {
+    padding-left: 17%;
+}
+
+.info_slider_texts {
+    position: relative;
+    top: -180px;
+}
+
+.info_slider_text1,
+.info_slider_text2 {
+    text-shadow: 0 1px 3px rgba(69, 5, 5, 0.8);
+    top: -145px;
+    text-align: center;
+    padding: 5px;
+}
+
+.info_slider_text1 {
+    font-size: 18px;
+}
+
+.info_slider_text2 {
+    font-size: 34px;
+}
+
+.akasaka_info_wrap {
+    background-color: #d199c2;
+}
+
+.akasaka_info_title::before {
+    border: 1px solid #874a74;
+}
+
+.purple_text {
+    color: #874a74;
+}
+
+/* 東陽町店 */
+.toyocho_information::before {
+    background: inherit;
+}
+
+.toyocho_information {
+    background-color: #303967;
+}
+
+.toyocho_info_address {
+    padding-left: 20%;
+}
+
+.toyocho_info_wrap {
+    background-color: #949cc3;
+}
+
+.toyocho_info_title::before {
+    border: 1px solid #2e396a;
+}
+
+.blue_text {
+    color: #2e396a;
+}
+
+/* 新宿店 */
+.shinjuku_information::before {
+    background: inherit;
+}
+
+.shinjuku_information {
+    background-color: #801b30;
+}
+
+.shinjuku_info_address {
+    padding-left: 22%;
+}
+
+.shinjuku_info_wrap {
+    background-color: #b95f71;
+}
+
+.shinjuku_info_title::before {
+    border: 1px solid #8c082e;
+}
+
+.red_text {
+    color: #8c082e;
+}
+
+@media screen and (max-width: 767px) {
+    .header_nav,
+    .header_top {
+        display: none;
+    }
+
+    /* .shop_nav ul {
+        height: 50%;
+    }
+
+    .header_nav li {
+        padding: 12% 0;
+    }
+
+    .header_nav li a {
+        color: #707070;
+        font-size: 15x;
+    }
+
+    .hum_nav ul li {
+        padding: 28px 0;
+        color: #707070;
+    } */
+
+    .under_title {
+        font-size: 25px;
+        padding-top: 160px;
+    }
+
+    .title_accesary {
+        display: none;
+    }
+
+    .shop_lists {
+        padding: 188px 0 136px;
+    }
+
+    .shop_btn {
+        width: 137px;
+        height: 137px;
+        font-size: 15px;
+    }
+
+    .shop_slide_wrapper {
+        padding-bottom: 16%;
+    }
+
+    .shop_btn_wrapper {
+        top: 26%;
+        left: 21%;
+    }
+
+    .shop_addresses {
+        left: 40%;
+        top: 15px;
+        max-width: 336px;
+    }
+
+    .shop_number {
+        font-size: 12px;
+    }
+
+    .shop_address {
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    /* 神保町 */
+
+    .shop_top {
+        top: -20px;
+    }
+
+    .information {
+        margin-top: 300px;
+    }
+
+    .information::before {
+        width: 156px;
+        height: 78px;
+        top: -105px;
+    }
+
+    .shop_title {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .jinbocho_accesary {
+        display: none;
+    }
+
+    .info_addresses {
+        display: block;
+        text-align: center;
+        top: 0px;
+    }
+
+    .info_shop_number {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+
+    .info_shop_address {
+        font-size: 15px;
+        padding-left: 0;
+    }
+
+    .info_access {
+        font-size: 17px;
+        top: 0px;
+        padding: 13px 0 27px;
+    }
+
+    .info_slider_text {
+        font-size: 16px;
+    }
+
+    .jinbocho_slide img {
+        opacity: 1;
+    }
+
+    .info_wrap {
+        background-color: #a9bfb1;
+        position: relative;
+        top: -60px;
+    }
+
+    .info_wrap::before {
+        width: 113px;
+        height: 56px;
+        top: -75px;
+    }
+
+    .info_name {
+        top: -18px;
+        padding-bottom: 90px;
+    }
+
+    .info_top {
+        font-size: 15px;
+    }
+
+    .info_accesary {
+        display: none;
+    }
+
+    .shop_info {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 80px 0;
+    }
+
+    .shop_info:nth-child(2n) {
+        flex-direction: row;
+    }
+
+    .info_title {
+        font-size: 17px;
+        max-width: 151px;
+        padding-bottom: 55px;
+        padding-left: 52px;
+    }
+
+    .info_title::before {
+        width: 90px;
+        height: 90px;
+        top: -40px;
+        left: 8px;
+    }
+
+    /* .info_title::after {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 120%;
+    content: "";
+    background-color: #a9bfb1;
+    z-index: 2;
+}
+
+.info_title:nth-child(2n + 1)::after {
+    top: -35%;
+    left: 165px;
+}
+
+.info_title:nth-child(2n)::after {
+    top: -35%;
+    left: -100px;
+} */
+
+    .info_text {
+        font-size: 12px;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        background: #c09f5c;
+        border-radius: 0 0 30px 0;
+        border: none;
+    }
+
+    .reserve_btn {
+        width: 350px;
+        height: 64px;
+        display: block;
+        margin: 100px auto;
+    }
+
+    .reserve_btn_text {
+        font-size: 14px;
+    }
+
+    /* 赤坂店 */
+
+    .akasaka_information::before {
+        background: inherit;
+    }
+
+    .akasaka_information {
+        background-color: #7f4d72;
+    }
+
+    .info_slider_texts {
+        position: relative;
+        top: -180px;
+    }
+
+    .info_slider_text1 {
+        font-size: 12px;
+    }
+
+    .info_slider_text2 {
+        font-size: 16px;
+    }
+
+    .akasaka_info_wrap {
+        background-color: #d199c2;
+    }
+
+    .akasaka_info_title::before {
+        border: 1px solid #874a74;
+    }
+
+    .purple_text {
+        color: #874a74;
+    }
+
+    /* 東陽町店 */
+    .toyocho_information::before {
+        background: inherit;
+    }
+
+    .toyocho_information {
+        background-color: #303967;
+    }
+
+    .toyocho_info_wrap {
+        background-color: #949cc3;
+    }
+
+    .toyocho_info_title::before {
+        border: 1px solid #2e396a;
+    }
+
+    .blue_text {
+        color: #2e396a;
+    }
+
+    /* 新宿店 */
+    .shinjuku_information::before {
+        background: inherit;
+    }
+
+    .shinjuku_information {
+        background-color: #801b30;
+    }
+
+    .shinjuku_info_wrap {
+        background-color: #b95f71;
+    }
+
+    .shinjuku_info_title::before {
+        border: 1px solid #8c082e;
+    }
+
+    .red_text {
+        color: #8c082e;
+    }
+}

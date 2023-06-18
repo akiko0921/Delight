@@ -7,6 +7,16 @@ header,
 
 .header_top {
     display: flex;
+    position: relative;
+    top: 20px;
+    max-width: 500px;
+    left: 42%;
+}
+
+.header_mark {
+    padding: 12px;
+    text-align: center;
+    font-size: 23px;
 }
 
 .header_nav {
@@ -486,9 +496,7 @@ header,
     }
 
     .title_accesary {
-        padding-bottom: 92px;
-        top: -35px;
-        width: 100px;
+        display: none;
     }
 
     .plice_text {
@@ -745,5 +753,9 @@ header,
         width: 261px;
         margin: 58px auto 100px;
         padding: 21px;
+    }
+
+    .header_top {
+        display: none;
     }
 }
