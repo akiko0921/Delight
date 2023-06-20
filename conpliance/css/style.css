@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+header,
+.conpliance_top {
+    background-color: #f7f3e9;
+}
+
+.header_top {
+    display: flex;
+    position: relative;
+    top: 20px;
+    max-width: 400px;
+    left: 42%;
+}
+
+.header_mark {
+    padding: 12px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.header_nav {
+    position: absolute;
+    top: 12%;
+    right: 7%;
+}
+
+.shop_nav ul {
+    height: 50%;
+}
+
+.header_nav li {
+    padding: 12% 0;
+}
+
+.header_nav li a {
+    color: #707070;
+    font-size: 15x;
+}
+
+.hum_nav ul li {
+    padding: 28px 0;
+    color: #707070;
+}
+
+.conp_title {
+    font-size: 41px;
+    padding: 400px 0 240px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.conpliance_title,
+.conpliance_text,
+.conpliance_text_plus {
+    color: #525151;
+}
+
+.conpliance_title {
+    font-size: 18px;
+    padding-bottom: 6px;
+}
+
+.conpliance_text {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.conpliance_wrap {
+    max-width: 1000px;
+    background-color: #fdfdfd;
+    padding: 200px 10px 400px;
+    margin: 0 auto;
+}
+
+.conpliance_item {
+    padding-bottom: 18px;
+}
+
+.conpliance_text_plus {
+    padding: 15px 0 15px;
+}
+
+.legal_title {
+    font-size: 14px;
+    padding-bottom: 7px;
+    color: #525151;
+}
+
+.legal_shop {
+    font-weight: bold;
+    color: #525151;
+}
+
+.legal_text {
+    font-size: 18px;
+    color: #525151;
+}
+
+@media screen and (max-width: 767px) {
+    .header_nav,
+    .header_top {
+        display: none;
+    }
+
+    .conp_title {
+        font-size: 25px;
+        padding: 142px 0 104px;
+    }
+
+    /* .shop_nav ul {
+        height: 50%;
+    }
+
+    .header_nav li {
+        padding: 12% 0;
+    }
+
+    .header_nav li a {
+        color: #707070;
+        font-size: 15x;
+    }
+
+    .hum_nav ul li {
+        padding: 28px 0;
+        color: #707070;
+    } */
+
+    .conpliance_title,
+    .conpliance_text_plus {
+        font-weight: bold;
+    }
+
+    .conpliance_title {
+        font-size: 11px;
+    }
+
+    .conpliance_text {
+        font-size: 11px;
+    }
+
+    .conpliance_wrap {
+        padding: 200px 10px 150px;
+    }
+
+    .conpliance_item {
+        padding-bottom: 15px;
+    }
+
+    .conpliance_text_plus {
+        padding: 15px 0 15px;
+        font-size: 11px;
+    }
+
+    .legal_title,
+    .legal_text {
+        font-size: 11px;
+    }
+}
