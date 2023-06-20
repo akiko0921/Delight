@@ -202,7 +202,7 @@
 
             $(".shop_slide").slick({
                 arrows: false,
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 2000,
                 dots: false,
                 // fade: true,
@@ -218,6 +218,12 @@
                 ],
             });
 
+        });
+
+        $(".hum_btn, .hum_nav li").on("click", function () {
+            $(".header_nav").fadeToggle();
+            $(".hum_btn").toggleClass("open");
+            $(".hum_nav").toggleClass("active");
         });
 
     </script>

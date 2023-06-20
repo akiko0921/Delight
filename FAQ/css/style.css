@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+header,
+.qa_top {
+    background-color: #f7f3e9;
+}
+
+.header_top {
+    display: flex;
+    position: relative;
+    top: 20px;
+    max-width: 500px;
+    left: 42%;
+}
+
+.header_mark {
+    padding: 12px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.header_nav {
+    position: absolute;
+    top: 12%;
+    right: 7%;
+}
+
+.shop_nav ul {
+    height: 50%;
+}
+
+.header_nav li {
+    padding: 12% 0;
+}
+
+.header_nav li a {
+    color: #707070;
+    font-size: 15x;
+}
+
+.hum_nav ul li {
+    padding: 28px 0;
+    color: #707070;
+}
+
+.under_title {
+    font-size: 41px;
+    padding-top: 200px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.title_accesary {
+    padding-bottom: 270px;
+    position: relative;
+    top: -54px;
+    margin: 0 auto;
+    width: 152px;
+    z-index: 1;
+}
+
+.qa_bottom {
+    background-color: #fdfdfd;
+}
+
+.accordion {
+    margin: 200px auto;
+    max-width: 1000px;
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.qa_title {
+    display: flex;
+    color: #707070;
+    cursor: pointer;
+    font-size: 18px;
+}
+.qa_title p {
+    color: #707070;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.q {
+    padding: 35px 0px;
+}
+
+.q_mark {
+    padding: 35px 25px 35px 64px;
+}
+
+.qa_content {
+    display: none;
+    padding: 61px 0px 70px 100px;
+}
+.qa_content p {
+    color: #707070;
+    font-size: 18px;
+    line-height: 1.2;
+}
+/* コンテンツボックスの枠線 */
+.qa_item {
+    border-top: 1px solid #c09f5c;
+}
+.qa_item:last-child {
+    border-bottom: 1px solid #c09f5c;
+}
+/* 矢印 */
+.qa_title {
+    position: relative;
+}
+.qa_title::after {
+    border-right: solid 1px #c09f5d;
+    border-top: solid 1px #c09f5d;
+    content: "";
+    display: block;
+    height: 11px;
+    position: absolute;
+    right: 48px;
+    top: 38%;
+    transform: rotate(135deg);
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    width: 11px;
+}
+.qa_title.open::after {
+    top: 45%;
+    transform: rotate(-45deg);
+    border-right: solid 1px #fdfdfd;
+    border-top: solid 1px #fdfdfd;
+}
+.qa_title.open {
+    background-color: #c09f5c;
+    color: #fdfdfd;
+}
+.qa_title.open span {
+    color: #fdfdfd;
+}
+
+@media screen and (max-width: 767px) {
+    .header_nav,
+    .header_top {
+        display: none;
+    }
+
+    .accordion {
+        padding: 100px 46px 80px 30px;
+        margin: 0;
+    }
+    .qa_title {
+        font-size: 13px;
+    }
+    .qa_title p {
+        font-size: 13px;
+    }
+
+    .q {
+        padding: 19px 0px;
+    }
+
+    .q_mark {
+        padding: 19px 8px 0px 34px;
+    }
+
+    .qa_content {
+        padding: 44px 0px 35px 32px;
+    }
+    .qa_content p {
+        font-size: 13px;
+    }
+    .qa_title::after {
+        height: 6px;
+        right: 24px;
+        width: 6px;
+    }
+}
