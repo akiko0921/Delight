@@ -9,8 +9,9 @@ header,
     display: flex;
     position: relative;
     top: 20px;
-    max-width: 500px;
-    left: 42%;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header_mark {

@@ -10,7 +10,8 @@ header,
     position: relative;
     top: 20px;
     max-width: 400px;
-    left: 42%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header_mark {
@@ -86,6 +87,17 @@ header,
     font-size: 14px;
     padding-bottom: 7px;
     color: #525151;
+    display: flex;
+    align-items: center;
+}
+
+.legal_title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #c09f5d;
+    margin-left: 3.5%;
+    width: 165px;
 }
 
 .legal_shop {
@@ -127,9 +139,19 @@ header,
         color: #707070;
     } */
 
-    .conpliance_title,
-    .conpliance_text_plus {
+    .conpliance_title {
         font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+
+    .conpliance_title::after {
+        content: "";
+        display: block;
+        height: 1px;
+        flex-grow: 1;
+        background-color: #c09f5d;
+        margin-left: 3.5%;
     }
 
     .conpliance_title {
@@ -141,7 +163,7 @@ header,
     }
 
     .conpliance_wrap {
-        padding: 200px 10px 150px;
+        padding: 200px 20px 150px;
     }
 
     .conpliance_item {
@@ -156,5 +178,9 @@ header,
     .legal_title,
     .legal_text {
         font-size: 11px;
+    }
+
+    .legal_title::after {
+        width: 133px;
     }
 }

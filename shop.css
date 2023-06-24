@@ -1,17 +1,15 @@
 @charset "utf-8";
-header,
-main,
-footer,
-.container {
-    background-color: #f7f3e9;
+.shop_container {
+    background-color: #f9f3e7;
 }
 
 .header_top {
     display: flex;
     position: relative;
     top: 20px;
-    max-width: 357px;
-    margin: 0 auto;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header_mark {
@@ -286,43 +284,81 @@ footer,
     flex-direction: row-reverse;
 }
 
-.info_title {
-    font-size: 28px;
-    width: 30%;
+.info_title_wrap {
     position: relative;
-    margin: 0 auto;
-    font-weight: bold;
 }
 
-.info_title::before {
+.info_title_l {
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 100;
+    line-height: 141px;
+    left: 200px;
+    position: relative;
+}
+
+.info_title_r {
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 100;
+    line-height: 141px;
+    left: -250px;
+    position: relative;
+}
+
+.info_circle_l {
     position: absolute;
-    border: 1px solid #367755;
     border-radius: 51%;
     width: 225px;
     height: 225px;
-    content: "";
-    top: -100px;
+    top: -50px;
+    left: 100px;
 }
 
-/* .info_title::after {
+.info_circle_r {
+    position: absolute;
+    border-radius: 51%;
+    width: 225px;
+    height: 225px;
+    top: -50px;
+    right: 100px;
+}
+
+.jinbocho_circle {
+    border: 1px solid #367755;
+}
+
+.info_circle_l::after {
     display: block;
     position: absolute;
     width: 50%;
-    height: 120%;
+    height: 50%;
     content: "";
-    background-color: #a9bfb1;
     z-index: 2;
 }
 
-.info_title:nth-child(2n + 1)::after {
-    top: -35%;
+.info_circle_r::after {
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    content: "";
+    z-index: 2;
+}
+
+.jinbocho_circle::after {
+    background-color: #a9bfb1;
+}
+
+.info_circle_l::after {
+    top: 30%;
     left: 165px;
 }
 
-.info_title:nth-child(2n)::after {
+.info_circle_r::after {
     top: -35%;
     left: -100px;
-} */
+}
 
 .info_text {
     font-size: 18px;
@@ -390,8 +426,13 @@ footer,
     background-color: #d199c2;
 }
 
-.akasaka_info_title::before {
+.akasaka_circle {
     border: 1px solid #874a74;
+}
+
+.akasaka_circle::after {
+    background-color: #d199c2;
+    content: "";
 }
 
 .purple_text {
@@ -415,8 +456,13 @@ footer,
     background-color: #949cc3;
 }
 
-.toyocho_info_title::before {
+.toyocho_circle {
     border: 1px solid #2e396a;
+}
+
+.toyocho_circle::after {
+    background-color: #949cc3;
+    content: "";
 }
 
 .blue_text {
@@ -440,8 +486,13 @@ footer,
     background-color: #b95f71;
 }
 
-.shinjuku_info_title::before {
+.shinjuku_circle {
     border: 1px solid #8c082e;
+}
+
+.shinjuku_circle::after {
+    color: #b95f71;
+    content: "";
 }
 
 .red_text {
@@ -449,6 +500,9 @@ footer,
 }
 
 @media screen and (max-width: 767px) {
+    .container {
+        background-color: #f9f3e7;
+    }
     .header_nav,
     .header_top {
         display: none;
@@ -599,46 +653,43 @@ footer,
         display: block;
         max-width: 100%;
         margin: 0 auto;
-        padding: 80px 0;
+        padding: 20px;
     }
 
     .shop_info:nth-child(2n) {
         flex-direction: row;
     }
 
-    .info_title {
+    .info_title_l {
         font-size: 17px;
         max-width: 151px;
-        padding-bottom: 55px;
         padding-left: 52px;
     }
 
-    .info_title::before {
-        width: 90px;
-        height: 90px;
-        top: -40px;
-        left: 8px;
+    .info_title_r {
+        font-size: 17px;
+        max-width: 151px;
+        padding-left: 52px;
+        left: 200px;
     }
 
-    /* .info_title::after {
-    display: block;
-    position: absolute;
-    width: 50%;
-    height: 120%;
-    content: "";
-    background-color: #a9bfb1;
-    z-index: 2;
-}
+    .info_circle_l,
+    .info_circle_r {
+        width: 90px;
+        height: 90px;
+        top: 20px;
+        left: 200px;
+    }
 
-.info_title:nth-child(2n + 1)::after {
-    top: -35%;
-    left: 165px;
-}
+    .info_circle_l::after {
+        top: 27px;
+        left: 80px;
+    }
 
-.info_title:nth-child(2n)::after {
-    top: -35%;
-    left: -100px;
-} */
+    .info_circle_r::after {
+        top: 26px;
+        left: 56px;
+    }
 
     .info_text {
         font-size: 12px;
