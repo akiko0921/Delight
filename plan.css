@@ -204,6 +204,7 @@ header,
 .plan_name_onetime {
     font-size: 35px;
     text-align: center;
+    text-shadow: 3px -1px 5px #fcf9f9;
 }
 
 .plan_kakko {
@@ -352,7 +353,7 @@ header,
 
 .plan_hover_title {
     display: none;
-    font-family: bold;
+    font-weight: bold;
     text-align: center;
     padding: 10px 0 15px;
     line-height: 1.6;
