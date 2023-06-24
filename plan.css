@@ -371,7 +371,11 @@ header,
     bottom: 50px;
 }
 
-.plan:hover + .plan_hover_titles {
+.plan:hover .plan_hover_title {
+    display: block;
+}
+
+.plan:hover .plan_hover_text {
     display: block;
 }
 
