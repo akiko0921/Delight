@@ -356,8 +356,8 @@
 }
 
 .info_circle_r::after {
-    top: -35%;
-    left: -100px;
+    top: 30%;
+    left: -80px;
 }
 
 .info_text {
@@ -432,7 +432,6 @@
 
 .akasaka_circle::after {
     background-color: #d199c2;
-    content: "";
 }
 
 .purple_text {
@@ -462,7 +461,6 @@
 
 .toyocho_circle::after {
     background-color: #949cc3;
-    content: "";
 }
 
 .blue_text {
@@ -491,8 +489,7 @@
 }
 
 .shinjuku_circle::after {
-    color: #b95f71;
-    content: "";
+    background-color: #b95f71;
 }
 
 .red_text {
