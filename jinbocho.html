@@ -24,12 +24,12 @@
     <div class="shop_container">
         <header id="header">
             <div class="header_top">
-                <p class="header_mark gray_text">TOP</p>
+                <a href="index.html" class="header_mark gray_text">TOP</a>
                 <p class="header_mark gray_text">/</p>
                 <p class="header_mark gray_text">店舗一覧｜神保町店</p>
             </div>
-            <h1 class="header_logo"><a href="index.html"><img src="images/logo.w.png" alt="delight"></a></h1>
-            <h1 class="sp_header_logo"><a href="index.html"><img src="images/sp_logo.png" alt="delight"></a></h1>
+            <h1 class="header_logo"><a href="jinbocho.html"><img src="images/logo.w.png" alt="delight"></a></h1>
+            <h1 class="sp_header_logo"><a href="jinbocho.html"><img src="images/sp_logo.png" alt="delight"></a></h1>
             <nav class="header_nav">
                 <ul>
                     <li><a href="lesson.html">シミュレーションゴルフ</a></li>
@@ -165,7 +165,9 @@
                     </div>
                     <button class="btn reserve_btn"><a href="" class="btnline white_arrow"><span
                                 class="reserve_btn_text">予約はこちらから</span></a></button>
+
                 </div>
+
 
             </section>
             <footer>
@@ -230,46 +232,7 @@
 
         </main>
     </div>
-    <script>
-
-        $(function () {
-
-            // アニメーション
-
-            // $('.fv').addClass('is_active');
-            // setTimeout(function () {
-            //     $('.fv').fadeOut();
-            // }, 3700);
-
-            $(".shop_slide").slick({
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                dots: false,
-                // fade: true,
-                slidesToShow: 3,
-                speed: 400,
-                responsive: [
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 2,
-                        },
-                    },
-                ],
-            });
-        });
-
-        $(".hum_btn, .hum_nav li").on("click", function () {
-            $(".shop_nav").fadeToggle();
-            $(".header_nav").fadeToggle();
-            $(".taiken_btn").fadeToggle();
-            $(".hum_btn").toggleClass("open");
-            $(".hum_nav").toggleClass("active");
-            $(".sp_hum_nav").toggleClass("active");
-        });
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

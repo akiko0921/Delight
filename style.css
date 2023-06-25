@@ -1,22 +1,64 @@
 @charset "utf-8";
 
+.popup_wrap {
+    width: 100%;
+    height: 100%;
+    background: rgba(232, 232, 232, 0.45);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    transition: 0.4s ease;
+}
+
+.popup_wrap.ok {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.popup_close {
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    top: 23px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.popup_close::before,
+.popup_close::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #c09f5d;
+}
+.popup_close::before {
+    transform: rotate(45deg);
+}
+.popup_close::after {
+    transform: rotate(-45deg);
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .popup {
     max-width: 900px;
     background-color: #eadecc;
     display: flex;
     justify-content: space-around;
-}
-
-.popup_items {
-    display: flex;
-    padding: 41px 10px 31px;
-    justify-content: space-between;
-    margin-top: 62px;
+    align-items: center;
 }
 
 .popup_money {
-    max-width: 221px;
-    max-height: 221px;
+    width: 221px;
+    height: 221px;
     background-color: #fdfdfd;
     border-radius: 50%;
     margin-right: 20px;
@@ -24,7 +66,7 @@
 }
 
 .popup_money_text {
-    padding-top: 60px;
+    padding-top: 70px;
     text-align: center;
     font-size: 24px;
 }
@@ -38,6 +80,7 @@
     background-repeat: repeat-x; /* 横方向に繰り返し */
     background-size: 1em 0.3em; /* 点の間隔とサイズ調整 */
     padding-top: 0.4em; /* 縦方向の位置調整 */
+    letter-spacing: 0;
 }
 
 .popup_yen {
@@ -51,6 +94,10 @@
 
 .popup_by {
     font-size: 19px;
+}
+
+.popup_ideas {
+    padding: 30px;
 }
 
 .popup_idea p {
@@ -83,7 +130,8 @@
 }
 
 .popup_ribon {
-    padding: 55px 32px;
+    width: 38px;
+    padding: 0 13px;
 }
 
 .try_btn {
@@ -96,6 +144,10 @@
     background: #f7f3ec;
     width: 100vw;
     position: relative;
+}
+
+.main_visual.active {
+    background-color: #fdfdfd;
 }
 
 .main_img {
@@ -162,6 +214,14 @@
     font-size: 18px;
     color: #707070;
     z-index: 900;
+}
+
+.fly_line::before {
+    animation: none;
+}
+
+.fly_line::after {
+    animation: none;
 }
 
 .scrolldown1 {
@@ -250,10 +310,21 @@
 
 .taiken_btn.fixed {
     position: fixed;
-    top: 0;
+    bottom: 0;
     right: 0;
     z-index: 999;
     height: 36px;
+}
+
+.taiken_line::before {
+    width: 164px;
+    left: -32px;
+    animation: none;
+}
+
+.taiken_line::after {
+    animation: none;
+    right: -33px;
 }
 
 .container {
@@ -301,8 +372,9 @@
 }
 
 #service {
-    background-color: #f7f3e9;
-    padding-bottom: 240px;
+    background-image: url(images/back_top_service.png);
+    background-repeat: no-repeat;
+    width: 100vw;
 }
 
 .title_wrapper {
@@ -603,7 +675,7 @@
 .shop_slide_wrapper {
     position: relative;
     max-height: 850px;
-    padding-bottom: 43px;
+    padding-bottom: 33px;
 }
 .shop_list_color {
     width: 100vw;
@@ -613,7 +685,7 @@
 
 .shop_btn_wrapper {
     position: absolute;
-    top: 33%;
+    top: 37%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -651,7 +723,9 @@
 .contact_text {
     font-size: 19px;
     line-height: 1.7;
-    padding-left: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .question_here {
@@ -703,7 +777,14 @@
     font-size: 22px;
 }
 
-.sp_main {
+.shop_back {
+    width: 100vw;
+}
+
+.sp_main,
+.popup_sp_ribon_top,
+.popup_sp_ribon_bottom,
+.sp_shop_back {
     display: none;
 }
 
@@ -714,8 +795,130 @@
     .main_text,
     .dragon,
     .scrolldown1,
-    .taiken_btn {
+    .taiken_btn,
+    .popup_ribon {
         display: none;
+    }
+    /* 
+    .popup_wrap {
+        width: 100%;
+        height: 100%;
+        background: rgba(232, 232, 232, 0.45);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10000;
+        transition: 0.4s ease;
+    } */
+
+    .popup_close {
+        width: 13px;
+        height: 15px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .popup {
+        max-width: 280px;
+        background-color: #eadecc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup_sp_ribon_top,
+    .popup_sp_ribon_bottom {
+        display: block;
+        width: 213px;
+    }
+
+    .popup_sp_ribon_top {
+        padding: 10px 34px 4px;
+    }
+
+    .popup_sp_ribon_bottom {
+        padding: 4px 34px 10px;
+    }
+
+    .popup_money {
+        width: 114px;
+        height: 114px;
+        position: absolute;
+        top: 40px;
+        right: -18px;
+        transform: rotate(16deg);
+    }
+
+    .popup_money_text {
+        padding-top: 35px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .popup_dots {
+        background-image: radial-gradient(
+            circle at center,
+            #801b30 20%,
+            transparent 20%
+        ); /* 点の色とサイズ調整 */
+        background-repeat: repeat-x; /* 横方向に繰り返し */
+        background-size: 1em 0.3em; /* 点の間隔とサイズ調整 */
+        padding-top: 0.4em; /* 縦方向の位置調整 */
+    }
+
+    .popup_yen {
+        font-size: 28px;
+        color: #801b30;
+    }
+
+    .popup_mark {
+        font-size: 10px;
+    }
+
+    .popup_by {
+        font-size: 10px;
+    }
+
+    .popup_ideas {
+        padding: 7px;
+    }
+
+    .popup_idea p {
+        font-size: 12px;
+        margin: 5px 0 5px -19px;
+        padding: 5px 9px;
+    }
+
+    .popup_idea p:nth-child(1) {
+        width: 139px;
+        height: 43px;
+        border-radius: 30px 30px;
+    }
+
+    .popup_idea p:nth-child(2) {
+        display: none;
+    }
+
+    .popup_idea p:nth-child(3) {
+        width: 146px;
+        height: 28px;
+        border-radius: 30px, 30px;
+    }
+
+    .popup_text_big {
+        font-size: 37px;
+    }
+
+    .popup_text {
+        font-size: 16px;
+        margin: 19px 0 9px;
+    }
+
+    .try_btn {
+        width: 184px;
+        height: 32px;
+        border-radius: 0 0 18px 0;
+        font-size: 10px;
     }
 
     .info {
@@ -826,7 +1029,6 @@
     }
 
     #service {
-        background-color: #f7f3e9;
         padding-bottom: 240px;
         margin-top: 300px;
     }

@@ -23,25 +23,16 @@ li {
     color: #fdfdfd;
     font-weight: normal;
     font-feature-settings: "palt";
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    font-family: YuMincho, "游明朝", "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
         "ＭＳ 明朝", serif;
     font-size: 17px;
     letter-spacing: 0.1em;
 }
-/* 
-html {
-    overflow: auto;
-}
-
-body {
-    overflow: hidden;
-    min-width: 900px;
-} */
 
 span,
 a {
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    font-family: YuMincho, "游明朝", "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
         "ＭＳ 明朝", serif;
     color: #fdfdfd;
@@ -374,9 +365,19 @@ footer {
     display: none;
 }
 
-/* メイン */
-
-/* フッター */
+.action {
+    /* 最初は非表示 */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+/* フェードイン時に入るクラス */
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
 
 @media screen and (max-width: 1100px) {
 }
@@ -386,6 +387,49 @@ footer {
     .header_top,
     .header_logo {
         display: none;
+    }
+
+    .hum_btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .hum_btn span,
+    .hum_btn span::before,
+    .hum_btn span::after {
+        display: block;
+        width: 23px;
+        height: 1px;
+        border-radius: 1px;
+        background: #c09f5c;
+        transition: 0.3s;
+    }
+
+    .hum_btn span::before,
+    .hum_btn span::after {
+        content: "";
+        position: absolute;
+    }
+
+    .hum_btn span {
+        position: relative;
+        top: 23px;
+        left: 12px;
+    }
+
+    .hum_btn span::before {
+        bottom: 10px;
+    }
+
+    .hum_btn span::after {
+        top: 10px;
+    }
+
+    /* ハンバーガー閉じる */
+
+    .hum_btn.open {
+        width: 45px;
+        height: 45px;
     }
 
     .sp_header_logo {
@@ -506,6 +550,23 @@ footer {
 
     .red {
         background-color: #801b30;
+    }
+
+    .btnline {
+        padding: 5px 0;
+        display: inline-block;
+        text-decoration: none;
+        outline: none;
+    }
+
+    /*矢印の設定*/
+    .btnline::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        right: 0px;
+        width: 10px;
+        transform: rotate(27deg);
     }
 
     footer {

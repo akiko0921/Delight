@@ -496,6 +496,14 @@
     color: #8c082e;
 }
 
+.shop_back {
+    width: 100vw;
+}
+
+.sp_shop_back {
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     .container {
         background-color: #f9f3e7;

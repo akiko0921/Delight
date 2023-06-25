@@ -36,7 +36,7 @@ header,
 
 .header_nav li a {
     color: #707070;
-    font-size: 15x;
+    font-size: 15px;
 }
 
 .hum_nav ul li {
@@ -83,6 +83,9 @@ header,
     color: #707070;
     font-size: 18px;
     line-height: 1.2;
+    font-family: "American Typewriter", sans-serif, YuMincho, "游明朝",
+        "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+        "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .q {
@@ -134,9 +137,9 @@ header,
 }
 .qa_title.open {
     background-color: #c09f5c;
-    color: #fdfdfd;
 }
-.qa_title.open span {
+
+.qa_title.open p {
     color: #fdfdfd;
 }
 

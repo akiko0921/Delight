@@ -156,7 +156,6 @@ header,
 .plan_name {
     font-size: 36px;
     text-align: center;
-    font-weight: bold;
 }
 
 .plan_border {
@@ -168,7 +167,6 @@ header,
 .plan_name_regular {
     font-size: 27px;
     text-align: center;
-    font-weight: bold;
 }
 
 .plan_plan_regular {
@@ -182,6 +180,7 @@ header,
     position: absolute;
     top: -170px;
     left: 35%;
+    z-index: 1;
 }
 
 .flag_img {
@@ -194,7 +193,6 @@ header,
 
 .plan_name_nm {
     font-size: 26px;
-    font-weight: bold;
 }
 
 .plan_and {
@@ -217,6 +215,7 @@ header,
     top: -10px;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
 .price {
@@ -289,6 +288,7 @@ header,
     transform: translate(-50%, 50%);
     top: -164px;
     opacity: 0.8;
+    z-index: 5;
 }
 
 .officer {
@@ -536,6 +536,10 @@ header,
         height: 147px;
         border-radius: 251px 256px 0 0;
         bottom: 524px;
+    }
+
+    .flag {
+        top: -159px;
     }
 
     .entry_price {

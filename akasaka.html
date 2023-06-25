@@ -24,7 +24,7 @@
     <div class="shop_container">
         <header id="header">
             <div class="header_top">
-                <p class="header_mark gray_text">TOP</p>
+                <a href="index.html" class="header_mark gray_text">TOP</a>
                 <p class="header_mark gray_text">/</p>
                 <p class="header_mark gray_text">店舗一覧｜赤坂店</p>
             </div>
@@ -245,47 +245,7 @@
 
         </main>
     </div>
-    <script>
-
-        $(function () {
-
-            // アニメーション
-
-            // $('.fv').addClass('is_active');
-            // setTimeout(function () {
-            //     $('.fv').fadeOut();
-            // }, 3700);
-
-            $(".shop_slide").slick({
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                dots: false,
-                // fade: true,
-                slidesToShow: 3,
-                speed: 400,
-                responsive: [
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 2,
-                        },
-                    },
-                ],
-            });
-
-        });
-
-        $(".hum_btn, .hum_nav li").on("click", function () {
-            $(".shop_nav").fadeToggle();
-            $(".header_nav").fadeToggle();
-            $(".taiken_btn").fadeToggle();
-            $(".hum_btn").toggleClass("open");
-            $(".hum_nav").toggleClass("active");
-            $(".sp_hum_nav").toggleClass("active");
-        });
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

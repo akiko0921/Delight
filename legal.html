@@ -23,12 +23,12 @@
 <body>
     <header id="header">
         <div class="header_top">
-            <p class="header_mark gray_text">TOP</p>
+            <a href="index.html" class="header_mark gray_text">TOP</a>
             <p class="header_mark gray_text">/</p>
             <p class="header_mark gray_text">店舗一覧</p>
         </div>
-        <h1 class="header_logo"><a href="index.html"><img src="images/logo.w.png" alt="delight"></a></h1>
-        <h1 class="sp_header_logo"><a href="index.html"><img src="images/sp_logo.png" alt="delight"></a></h1>
+        <h1 class="header_logo"><a href="legal.html"><img src="images/logo.w.png" alt="delight"></a></h1>
+        <h1 class="sp_header_logo"><a href="legal.html"><img src="images/sp_logo.png" alt="delight"></a></h1>
         <nav class="header_nav">
             <ul>
                 <li><a href="lesson.html">シミュレーションゴルフ</a></li>
@@ -252,27 +252,7 @@
         </div>
         <div class="small"><small>&copy;Delight 2023</small></div>
     </footer>
-
-    <script>
-        $(function () {
-            $(".qa_title").on("click", function () {
-                $(".qa_title").not(this).removeClass("open");
-                $(".qa_title").not(this).next().slideUp(300);
-                $(this).toggleClass("open");
-                $(this).next().slideToggle(300);
-            });
-        });
-
-        $(".hum_btn, .hum_nav li").on("click", function () {
-            $(".shop_nav").fadeToggle();
-            $(".header_nav").fadeToggle();
-            $(".taiken_btn").fadeToggle();
-            $(".hum_btn").toggleClass("open");
-            $(".hum_nav").toggleClass("active");
-            $(".sp_hum_nav").toggleClass("active");
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
