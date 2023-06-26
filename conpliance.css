@@ -6,46 +6,6 @@
     background-repeat: no-repeat;
 }
 
-.header_top {
-    display: flex;
-    position: relative;
-    top: 20px;
-    max-width: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.header_mark {
-    padding: 12px;
-    text-align: center;
-    font-size: 23px;
-}
-
-.header_nav {
-    position: absolute;
-    top: 12%;
-    right: 7%;
-    z-index: 100;
-}
-
-.shop_nav ul {
-    height: 50%;
-}
-
-.header_nav li {
-    padding: 7% 0;
-}
-
-.header_nav li a {
-    color: #707070;
-    font-size: 15x;
-}
-
-.hum_nav ul li {
-    padding: 28px 0;
-    color: #707070;
-}
-
 .conp_title {
     font-size: 41px;
     padding: 400px 0 240px;
@@ -112,9 +72,13 @@
 }
 
 @media screen and (max-width: 767px) {
-    .header_nav,
     .header_top {
         display: none;
+    }
+
+    .header_nav {
+        opacity: 0;
+        pointer-events: none;
     }
 
     .compla_container {

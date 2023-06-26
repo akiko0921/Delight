@@ -25,8 +25,8 @@
                 <p class="header_mark gray_text">/</p>
                 <p class="header_mark gray_text">店舗一覧｜神保町店</p>
             </div>
-            <h1 class="header_logo"><a href="jinbocho.html"><img src="images/logo.w.png" alt="delight"></a></h1>
-            <h1 class="sp_header_logo"><a href="jinbocho.html"><img src="images/sp_logo.png" alt="delight"></a></h1>
+            <h1 class="header_logo"><a href="index.html"><img src="images/logo.w.png" alt="delight"></a></h1>
+            <h1 class="sp_header_logo"><a href="index.html"><img src="images/sp_logo.png" alt="delight"></a></h1>
             <nav class="header_nav">
                 <ul>
                     <li><a href="lesson.html">シミュレーションゴルフ</a></li>
@@ -230,6 +230,23 @@
 
         </main>
     </div>
+
+    <script>
+
+        $(function () {
+            $(window).scroll(function () {
+                const windowHeight = $(window).height();
+                const scroll = $(window).scrollTop();
+
+                $('.action').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scroll > targetPosition - windowHeight + 100) {
+                        $(this).addClass("is-fadein");
+                    }
+                });
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

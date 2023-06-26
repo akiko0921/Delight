@@ -21,18 +21,19 @@ $(function () {
     $(".capture_slide").slick({
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2500,
         dots: false,
         // fade: true,
         slidesToShow: 1,
-        speed: 400,
+        speed: 1500,
+        fade: true,
 
     });
 
     $(".service_slide").slick({
         arrows: true,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2500,
         centerPadding: "30px",
         dots: false,
         // fade: true,

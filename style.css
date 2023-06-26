@@ -281,16 +281,12 @@
 
 .shop_nav {
     position: absolute;
-    top: 12%;
+    top: 16%;
     right: 7%;
 }
 
-.shop_nav ul {
-    height: 50%;
-}
-
 .shop_nav li {
-    padding: 36% 0;
+    padding: 30% 0;
 }
 
 .shop_nav li a {
@@ -790,10 +786,107 @@
     display: none;
 }
 
+@media screen and (max-width: 1100px) {
+    .shop_nav {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .sp_hum_nav {
+        display: block;
+        background-color: #ffffff;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: -120%;
+        transition: all 1.2s;
+        max-height: 650px;
+        text-align: center;
+        padding-bottom: 56px;
+    }
+
+    .sp_hum_nav.active {
+        right: 0px;
+    }
+
+    .sp_hum_nav_items {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 258px;
+        margin: 100px auto 20px;
+    }
+
+    .sp_hum_nav_item {
+        display: flex;
+        align-items: center;
+        margin: 9px 3px;
+        border: 1px dashed #c69d50;
+        border-radius: 25px;
+        padding: 14px 15px;
+    }
+
+    .sp_hum_nav_item:last-child {
+        padding: 14px 10px;
+    }
+
+    .sp_hum_nav_item a {
+        color: #707070;
+    }
+
+    .sp_hum_circle {
+        background-color: #c69d50;
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        margin-right: 6px;
+        position: relative;
+    }
+
+    .sp_hum_circle::before {
+        content: "";
+        left: 10px;
+        top: 50%;
+        width: 12px;
+        height: 1px;
+        background: #fdfdfd;
+        display: inline-block;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+    .sp_hum_circle::after {
+        content: "";
+        left: 9px;
+        top: 37%;
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid #fdfdfd;
+        border-right: 1px solid #fdfdfd;
+        transform: rotate(45deg);
+        position: absolute;
+        display: inline-block;
+    }
+
+    .sp_hum_shops {
+        display: flex;
+        margin: 20px auto;
+        width: 376px;
+    }
+
+    .sp_hum_shop {
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        font-size: 13px;
+        margin: 5px;
+        line-height: 84px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .main_img,
     .header_logo,
-    .shop_nav,
     .main_text,
     .dragon,
     .scrolldown1,
@@ -979,6 +1072,15 @@
 
     .start {
         font-size: 14px;
+    }
+
+    .fly_line::before {
+        width: 50%;
+        right: 37px;
+    }
+
+    .fly_line::after {
+        right: 36px;
     }
 
     .topics {

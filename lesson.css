@@ -3,61 +3,6 @@
     background-color: #f7f3e9;
 }
 
-.header_top {
-    display: flex;
-    position: relative;
-    top: 20px;
-    max-width: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.header_mark {
-    padding: 12px;
-    text-align: center;
-    font-size: 23px;
-}
-
-.header_nav {
-    position: absolute;
-    top: 12%;
-    right: 7%;
-    z-index: 100;
-}
-
-.shop_nav ul {
-    height: 50%;
-}
-
-.header_nav li {
-    padding: 7% 0;
-}
-
-.header_nav li a {
-    color: #707070;
-    font-size: 15px;
-}
-
-.hum_nav ul li {
-    padding: 28px 0;
-    color: #707070;
-}
-
-.under_title {
-    font-size: 41px;
-    padding-top: 400px;
-    position: relative;
-    z-index: 2;
-}
-
-.title_accesary {
-    position: relative;
-    top: -54px;
-    margin: 0 auto;
-    width: 438px;
-    z-index: 1;
-}
-
 .lesson_top {
     text-align: center;
 }
@@ -278,9 +223,13 @@
 }
 
 @media screen and (max-width: 767px) {
-    .header_nav,
     .header_top {
         display: none;
+    }
+
+    .header_nav {
+        opacity: 0;
+        pointer-events: none;
     }
 
     .under_title {

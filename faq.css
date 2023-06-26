@@ -6,63 +6,6 @@
     background-repeat: no-repeat;
 }
 
-.header_top {
-    display: flex;
-    position: relative;
-    top: 20px;
-    max-width: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.header_mark {
-    padding: 12px;
-    text-align: center;
-    font-size: 23px;
-}
-
-.header_nav {
-    position: absolute;
-    top: 12%;
-    right: 7%;
-    z-index: 100;
-}
-
-.shop_nav ul {
-    height: 50%;
-}
-
-.header_nav li {
-    padding: 7% 0;
-}
-
-.header_nav li a {
-    color: #707070;
-    font-size: 15px;
-}
-
-.hum_nav ul li {
-    padding: 28px 0;
-    color: #707070;
-}
-
-.under_title {
-    font-size: 41px;
-    padding-top: 200px;
-    position: relative;
-    z-index: 2;
-    text-align: center;
-}
-
-.title_accesary {
-    padding-bottom: 270px;
-    position: relative;
-    top: -54px;
-    margin: 0 auto;
-    width: 152px;
-    z-index: 1;
-}
-
 .qa_bottom {
     background-color: #fdfdfd;
 }
@@ -85,9 +28,6 @@
     color: #707070;
     font-size: 18px;
     line-height: 1.2;
-    font-family: "American Typewriter", sans-serif, YuMincho, "游明朝",
-        "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
-        "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .q {
@@ -96,6 +36,9 @@
 
 .q_mark {
     padding: 35px 25px 35px 64px;
+    font-family: "American Typewriter", Century, serif, YuMincho, "游明朝",
+        "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3",
+        "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝";
 }
 
 .qa_content {
@@ -146,9 +89,13 @@
 }
 
 @media screen and (max-width: 767px) {
-    .header_nav,
     .header_top {
         display: none;
+    }
+
+    .header_nav {
+        opacity: 0;
+        pointer-events: none;
     }
 
     .compla_container {

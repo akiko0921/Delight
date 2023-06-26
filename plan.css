@@ -5,47 +5,7 @@ header,
     background-color: #f7f3e9;
 }
 
-.header_top {
-    display: flex;
-    position: relative;
-    top: 20px;
-    max-width: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.header_mark {
-    padding: 12px;
-    text-align: center;
-    font-size: 23px;
-}
-
-.header_nav {
-    position: absolute;
-    top: 12%;
-    right: 7%;
-    z-index: 100;
-}
-
-.shop_nav ul {
-    height: 50%;
-}
-
-.header_nav li {
-    padding: 7% 0;
-}
-
-.header_nav li a {
-    color: #707070;
-    font-size: 15x;
-}
-
-.hum_nav ul li {
-    padding: 28px 0;
-    color: #707070;
-}
-
-.under_title {
+.plan_title {
     font-size: 41px;
     padding-top: 200px;
     position: relative;
@@ -103,7 +63,7 @@ header,
     border-radius: 251px 256px 0 0;
     background: inherit;
     transform: translate(-50%, 50%);
-    bottom: 220px;
+    bottom: -350px;
     z-index: 1;
 }
 
@@ -224,6 +184,10 @@ header,
     font-size: 52px;
     text-align: center;
     padding: 48px 0 68px;
+}
+
+.plan_en {
+    font-size: 25px;
 }
 
 .price_yen {
@@ -474,32 +438,26 @@ header,
     padding: 75px;
 }
 
+.plan_yen,
+.plan_sen_red,
+.entry_price_mark,
+.entry_price_en,
+.price,
+.plan_en {
+    font-family: "Apple Lisung", "Calisto MT", "Bookman Old Style", Bookman,
+        "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter",
+        Georgia, serif;
+}
+
 @media screen and (max-width: 767px) {
     .header_nav {
-        display: none;
+        opacity: 0;
+        pointer-events: none;
     }
 
-    /* .shop_nav ul {
-        height: 50%;
-    }
-
-    .header_nav li {
-        padding: 12% 0;
-    }
-
-    .header_nav li a {
-        color: #707070;
-        font-size: 15x;
-    }
-
-    .hum_nav ul li {
-        padding: 28px 0;
-        color: #707070;
-    } */
-
-    .under_title {
+    .plan_title {
         font-size: 25px;
-        padding-top: 160px;
+        padding: 140px 0 90px;
     }
 
     .title_accesary {
@@ -536,7 +494,7 @@ header,
         width: 294px;
         height: 147px;
         border-radius: 251px 256px 0 0;
-        bottom: 524px;
+        bottom: 70px;
     }
 
     .flag {
