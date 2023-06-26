@@ -293,6 +293,10 @@
     color: #707070;
 }
 
+.top_hum_nav.hum_nav.active {
+    right: 26px;
+}
+
 .taiken_btn {
     position: absolute;
     bottom: 0;
