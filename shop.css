@@ -167,8 +167,10 @@
     font-size: 34px;
     text-shadow: 0 1px 3px rgba(69, 5, 5, 0.8);
     text-align: center;
-    position: relative;
-    top: -145px;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .shop_under_slide img {
@@ -348,8 +350,10 @@
 }
 
 .info_slider_texts {
-    position: relative;
-    top: -180px;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .info_slider_text1,

@@ -95,7 +95,7 @@
                 <div class="title_accesary">
                     <img src="images/Plan.png" alt="plan">
                 </div>
-                <div>
+                <div class="action">
                     <p class="plice_text">まずは試してみたい、<br class="sp_br">毎月コンスタントに通えない、<br class="sp_br">入会を迷っている方へ</p>
                     <p class="plice_sen gray_text"><span class="plan_sen_big gray_text">入会金不要</span>で<br
                             class="sp_br"><span class="plan_sen_middle gray_text">１時間</span><span
@@ -106,13 +106,13 @@
                 </div>
             </div>
             <div class="plan_bottom">
-                <div class="entry_price">
+                <div class="entry_price action">
                     <p class="entry_price_name gray_text">入会金</p>
                     <p class="entry_price_en"><span class="entry_price_mark gray_text">￥</span>11,000</p>
                 </div>
                 <p class="plan_text gray_text">ご自身のライフスタイルに合わせて選べる5プランとなっております。</p>
                 <div class="plans">
-                    <div class="plan officer">
+                    <div class="plan officer action">
                         <div class="plan_name_wrap">
                             <p class="plan_name gray_text">法人</p>
                             <p class="plan_plan gray_text">プラン</p>
@@ -133,7 +133,7 @@
                             <p class="a_hour gray_text">３時間</p>
                         </div>
                     </div>
-                    <div class="plan vip">
+                    <div class="plan vip action">
                         <div class="plan_name_wrap">
                             <p class="plan_name gray_text">VIP</p>
                             <p class="plan_plan gray_text">プラン</p>
@@ -155,7 +155,7 @@
                         </div>
                     </div>
 
-                    <div class="plan regular">
+                    <div class="plan regular action">
                         <div class="flag">
                             <div class="flag_img">
                                 <img src="images/flag.png" alt="旗">
@@ -182,7 +182,7 @@
                             <p class="a_hour gray_text">１時間</p>
                         </div>
                     </div>
-                    <div class="plan nm">
+                    <div class="plan nm action">
                         <div class="plan_name_wrap">
                             <p class="plan_name_nm gray_text">ナイト<span class="plan_and gray_text">＆</span><br>
                                 モーニング</p>
@@ -203,7 +203,7 @@
                             <p class="a_hour gray_text">２時間</p>
                         </div>
                     </div>
-                    <div class="plan onetime">
+                    <div class="plan onetime action">
                         <div class="plan_name_wrap">
                             <p class="plan_name_onetime gray_text">1回券<br><span
                                     class="plan_kakko gray_text">(都度払い)</span>
@@ -230,15 +230,15 @@
                     </div>
                 </div>
 
-                <p class="plan_sen gray_text">１日の利用回数の制限はございませんので複数枠の予約を取ることができます。<br>
+                <p class="plan_sen gray_text action">１日の利用回数の制限はございませんので複数枠の予約を取ることができます。<br>
                     ただし連続しての予約は取ることができません（例えばレギュラープランで2時間連続でプレーをすることです）。<br>
                     1回の利用時間を延長したい場合は<span class="plan_sen_span gray_text">1時間￥2,200</span>の延長チケットをご購入いただければ延長が可能です。</p>
 
 
 
-                <p class="exam_top gray_text">レギュラープランにご契約した場合の一例</p>
+                <p class="exam_top gray_text action">レギュラープランにご契約した場合の一例</p>
 
-                <div class="exams">
+                <div class="exams action">
                     <div class="exam">
                         <div class="exam_wrap">
                             <div class="noon">
@@ -286,7 +286,8 @@
                     </div>
 
                 </div>
-                <div class="plan_more"><a href="" class="btnline gold_arrow"><span class="gray_text">プランの詳細のご質問・<br>
+                <div class="plan_more action"><a href="" class="btnline gold_arrow"><span
+                            class="gray_text">プランの詳細のご質問・<br>
                             ご相談はこちらから
                         </span></a>
                 </div>
@@ -294,7 +295,7 @@
         </section>
     </main>
     <footer>
-        <div class="footer">
+        <div class="footer action">
             <div class="footer_top">
                 <a href="plan.html" class="footer_logo">
                     <img src="images/logo.w.png" alt="ディライト">
@@ -351,6 +352,24 @@
         </div>
         <div class="small"><small>&copy;Delight 2023</small></div>
     </footer>
+
+    <script>
+
+        $(function () {
+            $(window).scroll(function () {
+                const windowHeight = $(window).height();
+                const scroll = $(window).scrollTop();
+
+                $('.action').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scroll > targetPosition - windowHeight + 100) {
+                        $(this).addClass("is-fadein");
+                    }
+                });
+            });
+        });
+
+    </script>
 
     <script src="script.js"></script>
 </body>

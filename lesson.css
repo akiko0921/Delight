@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.lesson_top_title {
+    padding-top: 500px;
+}
+
 .lesson_img_left,
 .lesson_img_center,
 .lesson_img_right {
@@ -14,7 +18,7 @@
 }
 
 .what_is {
-    padding: 480px 0 170px;
+    padding: 200px 0 170px;
 }
 
 .lesson_imgs {

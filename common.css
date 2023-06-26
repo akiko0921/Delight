@@ -404,8 +404,8 @@ footer {
     padding-bottom: 270px;
     position: relative;
     top: -54px;
-    margin: 0 auto;
-    width: 152px;
+    text-align: center;
+    height: 87px;
     z-index: 1;
 }
 

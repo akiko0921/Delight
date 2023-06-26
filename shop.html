@@ -96,7 +96,7 @@
                         <img src="images/Locations.png" alt="Locations">
                     </div>
                 </div>
-                <div class="shop_lists">
+                <div class="shop_lists action">
                     <div class="shop_list">
                         <div class="shop_slide_wrapper">
                             <div class="shop_slide">
@@ -176,7 +176,7 @@
             </section>
         </main>
         <footer>
-            <div class="footer">
+            <div class="footer action">
                 <div class="footer_top">
                     <a href="shop.html" class="footer_logo">
                         <img src="images/logo.w.png" alt="ディライト">
@@ -234,6 +234,24 @@
             <div class="small"><small>&copy;Delight 2023</small></div>
         </footer>
     </div>
+
+    <script>
+
+        $(function () {
+            $(window).scroll(function () {
+                const windowHeight = $(window).height();
+                const scroll = $(window).scrollTop();
+
+                $('.action').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scroll > targetPosition - windowHeight + 100) {
+                        $(this).addClass("is-fadein");
+                    }
+                });
+            });
+        });
+
+    </script>
 
     <script src="script.js"></script>
 

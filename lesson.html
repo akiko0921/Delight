@@ -91,12 +91,12 @@
         <main>
             <section id="lesson">
                 <div class="lesson_top">
-                    <h2 class="under_title gold_text">シミュレーションゴルフ</h2>
-                    <div class="title_accesary">
+                    <h2 class="under_title lesson_top_title gold_text">シミュレーションゴルフ</h2>
+                    <div class="lesson_accesary title_accesary">
                         <img src="images/simulation golf.png" alt="">
                     </div>
                 </div>
-                <div class="what_is">
+                <div class="what_is action">
                     <div class="lesson_imgs">
                         <div class="lesson_img_left"><img src="images/lesson1.png" alt=""></div>
                         <div class="lesson_img_center"><img src="images/lesson2.png" alt=""></div>
@@ -115,11 +115,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="ok_title">
+                <div class="ok_title action">
                     <p class="ok_title_mini gray_text">使用機器</p>
                     <p class="ok_title_big gold_text">OKonGOLF</p>
                 </div>
-                <div class="ok_contents">
+                <div class="ok_contents action">
                     <p class="ok_text gray_text">実際のコースに合わせて床が傾いたり<br>
                         風速や傾斜の流れなどの細かい情報が表示されるので<br>
                         コース戦略の練習ができます<br>
@@ -130,15 +130,15 @@
                         <img src="images/okon.png" alt="">
                     </div>
                 </div>
-                <p class="lesson_title gray_text"><span class="big_text lesson_big gold_text">飛</span>ばしのレッスン</p>
-                <div class="lesson_contents">
+                <p class="lesson_title gray_text action"><span class="big_text lesson_big gold_text">飛</span>ばしのレッスン</p>
+                <div class="lesson_contents action">
                     <div class="lesson_img">
                         <img src="images/flylesson.png" alt="">
                     </div>
                     <p class="lesson_text gray_text">毎月各店舗で飛ばしのレッスン開催中です<br>
                         フォームが改善され飛距離が<span class="lesson_bold gray_text">30yd</span>伸びると大好評のレッスン</p>
                 </div>
-                <div class="intro">
+                <div class="intro action">
                     <div class="intro_img"><img src="images/toyoda.png" alt=""></div>
                     <div class="teach_item">
                         <div class="teach">
@@ -155,13 +155,13 @@
                         </p>
                     </div>
                 </div>
-                <button class="btn reserve_btn"><a href="" class="btnline white_arrow"><span
+                <button class="btn reserve_btn action"><a href="" class="btnline white_arrow"><span
                             class="reserve_btn_text">レッスンの予約はこちらから</span></a>
                 </button>
             </section>
         </main>
         <footer>
-            <div class="footer">
+            <div class="footer action">
                 <div class="footer_top">
                     <a href="lesson.html" class="footer_logo">
                         <img src="images/logo.w.png" alt="ディライト">
@@ -220,6 +220,26 @@
         </footer>
 
     </div>
+
+    <script>
+
+        $(function () {
+            $(window).scroll(function () {
+                const windowHeight = $(window).height();
+                const scroll = $(window).scrollTop();
+
+                $('.action').each(function () {
+                    const targetPosition = $(this).offset().top;
+                    if (scroll > targetPosition - windowHeight + 100) {
+                        $(this).addClass("is-fadein");
+                    }
+                });
+            });
+        });
+
+    </script>
+
+
     <script src="script.js"></script>
 
 </body>
