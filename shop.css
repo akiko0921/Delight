@@ -381,7 +381,9 @@
     width: 658px;
     height: 100px;
     display: block;
-    margin: 200px auto;
+    margin: 200px auto 0;
+    position: relative;
+    z-index: 5;
 }
 
 .reserve_btn_text {
@@ -498,18 +500,31 @@
 
 .shop_back {
     width: 100vw;
+    position: relative;
+    margin-top: -255px;
+    top: 5px;
 }
 
 .sp_shop_back {
     display: none;
 }
 
+.toyocho_back {
+    margin-top: -100px;
+}
+
+.shinjuku_back {
+    margin-top: -130px;
+}
+
 @media screen and (max-width: 767px) {
+    html,
     .container {
         background-color: #f9f3e7;
     }
     .header_nav,
-    .header_top {
+    .header_top,
+    .shop_back {
         display: none;
     }
 
@@ -794,5 +809,12 @@
 
     .red_text {
         color: #8c082e;
+    }
+
+    .sp_shop_back {
+        display: block;
+        width: 100vw;
+        position: relative;
+        top: 5px;
     }
 }

@@ -374,7 +374,7 @@
 #service {
     background-image: url(images/back_top_service.png);
     background-repeat: no-repeat;
-    width: 100vw;
+    background-size: cover;
 }
 
 .title_wrapper {
@@ -522,6 +522,10 @@
     padding-top: 33px;
 }
 
+.service_padding {
+    padding: 157px;
+}
+
 .btn {
     background: #c09f5c;
     border-radius: 0 0 30px 0;
@@ -652,8 +656,10 @@
     text-align: center;
 }
 
-.shop_title_wrapper {
-    background-color: #f7f3e9;
+#shop {
+    background-image: url(images/back_top_shop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .shop_btn {
@@ -775,10 +781,6 @@
     margin: 0 auto;
     display: block;
     font-size: 22px;
-}
-
-.shop_back {
-    width: 100vw;
 }
 
 .sp_main,
