@@ -416,6 +416,8 @@ footer {
     display: none;
 }
 
+/* アニメーション */
+
 .action {
     /* 最初は非表示 */
     opacity: 0;

@@ -419,6 +419,9 @@
 
 .capture_slide {
     width: 58.6%;
+}
+
+.capture_slide img {
     border-radius: 0 0 30px 0;
 }
 
