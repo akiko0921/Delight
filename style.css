@@ -660,7 +660,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 405px;
+    width: 418px;
 }
 
 .passtime_text {
@@ -707,7 +707,6 @@
 
 .shop_slide_wrapper {
     position: relative;
-    max-height: 850px;
     padding-bottom: 33px;
 }
 .shop_list_color {
@@ -774,7 +773,7 @@
 }
 
 .contact_form {
-    padding: 160px 20px 140px 0;
+    padding: 160px 20px 140px;
 }
 
 .must {
@@ -818,6 +817,50 @@
 }
 
 @media screen and (max-width: 1100px) {
+    .main_title {
+        font-size: 20px;
+        top: 20%;
+        left: 23%;
+    }
+
+    .main_text {
+        font-size: 16px;
+        top: 17%;
+        left: 16%;
+        line-height: 1.2;
+    }
+
+    .fly_btn {
+        top: 74%;
+        letter-spacing: 0.2em;
+        padding: 0px 38px 10px 18px;
+    }
+
+    .dragon {
+        font-size: 10px;
+        padding-right: 5px;
+    }
+
+    .toyoda {
+        font-size: 24px;
+    }
+
+    .lesson {
+        font-size: 20px;
+    }
+
+    .no {
+        font-size: 14px;
+    }
+
+    .start {
+        font-size: 15px;
+    }
+
+    .scrolldown1 {
+        right: 30%;
+    }
+
     .shop_nav {
         opacity: 0;
         pointer-events: none;
@@ -833,7 +876,6 @@
         top: 0;
         right: -120%;
         transition: all 1.2s;
-        max-height: 650px;
         text-align: center;
         padding-bottom: 56px;
     }
@@ -943,7 +985,6 @@
     .main_text,
     .dragon,
     .scrolldown1,
-    .taiken_btn,
     .popup_ribon {
         display: none;
     }
@@ -1067,6 +1108,11 @@
         height: 32px;
         border-radius: 0 0 18px 0;
         font-size: 10px;
+    }
+
+    .taiken_btn {
+        opacity: 0;
+        pointer-events: none;
     }
 
     .sp_main {
@@ -1359,13 +1405,14 @@
     }
 
     .passtime_wrapper {
-        width: 72%;
+        width: 77%;
     }
 
     .passtime_text {
         padding-bottom: 13px;
         text-align: center;
         line-height: 1.2;
+        font-size: 13px;
     }
 
     .passtime_movie {

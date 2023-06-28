@@ -229,11 +229,11 @@ img {
     top: 0;
     left: 48px;
     width: 128px;
-    z-index: 100;
+    z-index: 999;
 }
 
 .hum_btn {
-    position: absolute;
+    position: fixed;
     top: 2%;
     right: 7%;
     display: block;
@@ -305,17 +305,16 @@ img {
 /* ハンバーガーメニュー */
 
 .hum_nav ul li {
-    padding: 20px 0;
+    padding: 24px 0;
     color: #707070;
 }
 
 .hum_nav {
     position: fixed;
     z-index: 50;
-    top: 16%;
+    top: 20%;
     right: -120%;
     transition: all 1.2s;
-    max-height: 650px;
     text-align: center;
     padding-bottom: 56px;
 }
@@ -329,35 +328,40 @@ img {
     right: 7%;
 }
 
-footer {
+.footer {
     background-image: url(images/footer.png);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.footer {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 70px 20px 0;
+    padding: 0 20px;
 }
 
 .footer_top {
     display: flex;
     justify-content: space-between;
-    padding-top: 200px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .footer_logo {
     width: 24.3%;
+    padding-top: 100px;
 }
 
 .out_logo {
     display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .out_logo_img {
     width: 30px;
     padding: 30px 30px 30px 0;
+}
+
+.address {
+    padding-bottom: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .footer_nav {
@@ -366,6 +370,7 @@ footer {
     height: 311px;
     border-radius: 50%;
     position: relative;
+    top: 50px;
 }
 
 .footer_nav_wrap {
@@ -400,9 +405,7 @@ footer {
     background-color: #c09f5c;
     text-align: center;
     padding: 35px 0;
-    width: 100vw;
     font-size: 14px;
-    margin-top: 50px;
 }
 
 /* 下層ページヘッダーメニュー */
@@ -439,11 +442,6 @@ footer {
     font-size: 15px;
 }
 
-.hum_nav ul li {
-    padding: 28px 0;
-    color: #707070;
-}
-
 .under_title {
     font-size: 41px;
     padding-top: 200px;
@@ -464,7 +462,8 @@ footer {
 .sp_header_logo,
 .sp_footer_nav,
 .sp_br,
-.sp_hum_nav {
+.sp_hum_nav,
+.tab_br {
     display: none;
 }
 
@@ -505,6 +504,13 @@ footer {
 }
 
 @media screen and (max-width: 1100px) {
+    .tab_br {
+        display: block;
+    }
+
+    .header_logo {
+        top: -20px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -568,7 +574,7 @@ footer {
         position: fixed;
         top: 6px;
         left: 14px;
-        z-index: 100;
+        z-index: 999;
     }
 
     .taiken_btn.fixed {
@@ -585,7 +591,6 @@ footer {
         top: 0;
         right: -120%;
         transition: all 1.2s;
-        max-height: 650px;
         text-align: center;
         padding-bottom: 56px;
     }
@@ -713,32 +718,38 @@ footer {
         transform: rotate(27deg);
     }
 
-    footer {
+    .footer {
         background-image: url(images/sp_footer.png);
         background-size: cover;
+        padding: 0px 20px 0;
     }
 
     .footer_logo {
-        width: 24.3%;
+        width: 148px;
         margin: 0 auto;
+        padding-top: 0;
+        display: block;
     }
 
     .footer_top {
-        padding-top: 24px;
+        display: block;
     }
 
     .address {
         text-align: center;
+        padding-bottom: 20px;
+        font-size: 10px;
     }
 
     .out_logo {
         display: flex;
         justify-content: center;
+        margin: -10px auto 5px;
     }
 
     .out_logo_img {
-        width: 30px;
-        padding: 30px;
+        width: 21px;
+        padding: 12px;
     }
 
     .footer_nav {
@@ -754,7 +765,8 @@ footer {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin: 20px auto;
+        max-width: 340px;
+        margin: 0 auto;
     }
 
     .sp_nav_topa {
@@ -766,7 +778,7 @@ footer {
         border-radius: 53px 53px;
         box-sizing: border-box;
         padding: 11px 0;
-        margin: 9px 15px;
+        margin: 4px 15px;
         text-align: center;
     }
 
@@ -774,13 +786,8 @@ footer {
         font-size: 14px;
     }
 
-    .sp_nav_bottom {
-        margin: 10px 30px 20px;
+    .sp_nav_bottom li {
         padding: 10px;
-    }
-
-    .small {
-        font-size: 12px;
     }
 
     .sp_br {

@@ -645,13 +645,13 @@
     .info_title_l {
         font-size: 17px;
         max-width: 151px;
-        padding-left: 52px;
+        padding-left: 26px;
     }
 
     .info_title_r {
         font-size: 17px;
         max-width: 151px;
-        padding-left: 52px;
+        padding-left: 26px;
         left: 200px;
     }
 
@@ -698,7 +698,7 @@
 
     .info_title_wrap {
         position: relative;
-        left: 23%;
+        left: 16%;
         transform: translate(-50%);
     }
 
