@@ -52,6 +52,7 @@ header,
 
 .plan_bottom {
     background-color: #fdfdfd;
+    position: relative;
 }
 
 .plan_bottom::before {
@@ -62,8 +63,8 @@ header,
     height: 250px;
     border-radius: 251px 256px 0 0;
     background: inherit;
-    transform: translate(-50%, 50%);
-    bottom: -350px;
+    transform: translate(-50%, -80%);
+    top: 0;
     z-index: 1;
 }
 
@@ -163,7 +164,7 @@ header,
 .plan_name_onetime {
     font-size: 35px;
     text-align: center;
-    text-shadow: 3px -1px 5px #fcf9f9;
+    text-shadow: 3px -1px 5px rgb(252, 249, 249, 0.6);
 }
 
 .plan_kakko {
@@ -250,8 +251,8 @@ header,
     height: 110px;
     border-radius: 110px 110px 0 0;
     background: #c09f5c;
-    transform: translate(-50%, 50%);
-    top: -164px;
+    transform: translate(-50%, -99.9%);
+    top: 0;
     opacity: 0.8;
     z-index: 5;
 }
@@ -436,6 +437,7 @@ header,
     margin: 150px auto;
     text-align: center;
     padding: 75px;
+    line-height: 2;
 }
 
 .plan_yen,
@@ -519,7 +521,7 @@ header,
     }
 
     .plan_text {
-        font-size: 18px;
+        display: none;
     }
 
     .regular {
@@ -529,7 +531,7 @@ header,
     .plans {
         display: flex;
         flex-direction: column;
-        padding: 150px 0 55px;
+        padding: 0 0 55px;
     }
 
     .plan {
@@ -645,7 +647,6 @@ header,
         width: 202px;
         height: 91px;
         border-radius: 101px 101px 0 0;
-        top: -136px;
     }
 
     .plan_sen {
@@ -693,7 +694,7 @@ header,
     }
 
     .noon_img {
-        left: 33px;
+        left: 25px;
     }
 
     .exam_hour {

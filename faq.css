@@ -4,6 +4,7 @@
     background-image: url(images/back_compla.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #fdfdfd;
 }
 
 .qa_bottom {
@@ -102,8 +103,12 @@
         background-image: url(images/back_compla_sp.png);
     }
 
+    .faq_accesary {
+        padding-bottom: 180px;
+    }
+
     .accordion {
-        padding: 100px 46px 80px 30px;
+        padding: 20px 46px 80px 30px;
         margin: 0;
     }
     .qa_title {

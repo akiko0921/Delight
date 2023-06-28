@@ -11,12 +11,32 @@ $(function () {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 0,
-        speed:5000,
+        speed:7000,
         dots: false,
         // fade: true,
         slidesToShow: 1.3,
         cssEase:"linear"
     });
+
+    $(".allshop_slide").slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed:7000,
+        dots: false,
+        // fade: true,
+        slidesToShow: 3,
+        cssEase:"linear",
+        // responsive: [
+        //     {
+        //         breakpoint: 767,
+        //         settings: {
+        //             slidesToShow: 2.5,
+        //         },
+        //     },
+        // ],
+    });
+
 
     $(".capture_slide").slick({
         arrows: false,

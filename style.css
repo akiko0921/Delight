@@ -218,6 +218,8 @@
 
 .fly_line::before {
     animation: none;
+    width: 97%;
+    left: 10px;
 }
 
 .fly_line::after {
@@ -227,7 +229,7 @@
 .scrolldown1 {
     /*描画位置※位置は適宜調整してください*/
     position: absolute;
-    right: 21%;
+    right: 19%;
     top: 86%;
     /*全体の高さ*/
     height: 50px;
@@ -281,7 +283,7 @@
 
 .shop_nav {
     position: absolute;
-    top: 16%;
+    top: 25%;
     right: 7%;
 }
 
@@ -306,6 +308,7 @@
     padding: 20px 54px;
     border-radius: 20px 0 0 0;
     color: #c09f5c;
+    border: 1px solid #fdfdfd;
 }
 
 .taiken_btn.fixed {
@@ -378,7 +381,7 @@
 }
 
 .title_wrapper {
-    padding: 200px 0 100px;
+    padding: 300px 0 100px;
 }
 
 .title {
@@ -432,6 +435,8 @@
     position: relative;
     top: -150px;
     left: 45%;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .capture_text {
@@ -451,11 +456,20 @@
     margin-left: 138px;
 }
 
-.more_btn {
+/* .more_btn {
     background: #ffffff;
     width: 230px;
     height: 230px;
     border-radius: 165px;
+    margin: 0 auto;
+} */
+
+.more_btn {
+    background: #ffffff;
+    width: 319px;
+    height: 73px;
+    border-radius: 0 0 44px 0;
+    margin: 30px auto;
 }
 
 .more {
@@ -546,6 +560,15 @@
     font-size: 25px;
 }
 
+/* .passtime_back {
+    background-image: url(images/paastime_back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+/* .passtime_back {
+    width: 100vw;
+} */
+
 .passtime_items {
     padding-bottom: 300px;
 }
@@ -625,7 +648,7 @@
 }
 
 .passtime_point {
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
     padding-bottom: 20px;
     line-height: 1.9;
@@ -642,7 +665,8 @@
 
 .passtime_text {
     padding-bottom: 26px;
-    line-height: 1.5;
+    line-height: 2.3;
+    font-size: 16px;
 }
 
 .passtime_movies {
@@ -758,7 +782,7 @@
     width: 65px;
     height: 30px;
     border-radius: 15px 15px;
-    padding: 6px 0 0 12px;
+    padding: 6px 0 0 14px;
     box-sizing: border-box;
     margin-left: 14.6%;
 }
@@ -805,7 +829,7 @@
         height: 100vh;
         width: 100vw;
         position: fixed;
-        z-index: 999;
+        z-index: 900;
         top: 0;
         right: -120%;
         transition: all 1.2s;
@@ -888,6 +912,28 @@
         font-size: 13px;
         margin: 5px;
         line-height: 84px;
+    }
+
+    .info {
+        font-size: 13px;
+        width: 130px;
+        margin: 0 auto;
+        color: #707070;
+        display: flex;
+        align-items: center;
+    }
+
+    .info_img {
+        width: 33px;
+        padding-right: 12px;
+    }
+
+    .passtime_item {
+        width: 70%;
+    }
+
+    .passtime_item:nth-child(even) {
+        margin-left: 30%;
     }
 }
 
@@ -1023,20 +1069,6 @@
         font-size: 10px;
     }
 
-    .info {
-        font-size: 13px;
-        width: 130px;
-        margin: 0 auto;
-        color: #707070;
-        display: flex;
-        align-items: center;
-    }
-
-    .info_img {
-        width: 33px;
-        padding-right: 12px;
-    }
-
     .sp_main {
         display: block;
     }
@@ -1051,13 +1083,14 @@
 
     .fly_btn {
         position: absolute;
-        top: 74%;
-        left: 12px;
+        bottom: 0;
+        left: 0;
         width: 162px;
         height: 162px;
         border-radius: 50%;
         padding: 1px;
         z-index: 20;
+        transform: translate(8%, -50%);
     }
 
     .toyoda {
@@ -1082,8 +1115,8 @@
     }
 
     .fly_line::before {
-        width: 50%;
-        right: 37px;
+        width: 90px;
+        left: 32px;
     }
 
     .fly_line::after {
@@ -1093,7 +1126,7 @@
     .topics {
         display: block;
         text-align: center;
-        padding: 37px 0 30px;
+        padding: 37px 15px 30px;
     }
 
     .topic {
@@ -1107,6 +1140,10 @@
         padding-bottom: 8px;
     }
 
+    .topic_title_text {
+        font-size: 12px;
+    }
+
     .topic_items {
         display: block;
         padding: 95px 0 100px;
@@ -1116,7 +1153,7 @@
         writing-mode: vertical-rl;
         font-size: 26px;
         padding: 70px 0 0 76%;
-        letter-spacing: 0.7em;
+        letter-spacing: 0.3em;
     }
 
     .topic_text {
@@ -1140,12 +1177,11 @@
     }
 
     #service {
-        padding-bottom: 240px;
-        margin-top: 300px;
+        margin-top: 400px;
     }
 
     .title_wrapper {
-        padding: 60px 0 106px;
+        padding: 140px 0 106px;
     }
 
     .title {
@@ -1168,6 +1204,7 @@
         left: 0px;
         top: 0px;
         text-align: center;
+        padding: 60px;
     }
 
     .service_aori::after {
@@ -1181,19 +1218,22 @@
         width: 82%;
         border-radius: 0 0 30px 0;
         margin: 0 auto;
+        position: relative;
+        z-index: 5;
     }
 
     .capture_texts {
         width: 62%;
-        height: 188px;
         margin: 0 auto;
         border-radius: 0 0 30px 0;
         top: -48px;
         left: 0px;
+        padding: 15px;
     }
 
     .capture_text {
         font-size: 14px;
+        padding: 15px;
     }
 
     .capture_border {
@@ -1203,11 +1243,19 @@
         margin-top: -120px;
     }
 
-    .more_btn {
+    /* .more_btn {
         background: #ffffff;
         width: 190px;
         height: 190px;
         border-radius: 50%;
+    } */
+
+    .more_btn {
+        width: 150px;
+        height: 45px;
+        border-radius: 0 0 22px 0;
+        margin: 15px auto;
+        font-size: 14px;
     }
 
     .more {
@@ -1297,6 +1345,7 @@
 
     .passtime_item {
         margin: 0 auto 47px;
+        width: 95%;
     }
 
     .passtime_title {
@@ -1310,7 +1359,7 @@
     }
 
     .passtime_wrapper {
-        width: 71%;
+        width: 72%;
     }
 
     .passtime_text {
@@ -1374,7 +1423,7 @@
     .contact_form {
         width: 63%;
         margin: 0 auto;
-        padding: 71px 0 90px;
+        padding: 180px 0 90px;
     }
 
     .must {

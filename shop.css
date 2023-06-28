@@ -22,8 +22,13 @@
     z-index: 1;
 }
 
-.shop_slide {
+.allshop_slide {
     position: relative;
+}
+
+.allshop_slide img {
+    opacity: 0.47;
+    height: 275px;
 }
 
 .shop_btn {
@@ -58,7 +63,7 @@
 .shop_addresses {
     display: flex;
     position: relative;
-    left: 40%;
+    left: 42%;
     top: 15px;
     max-width: 60%;
 }
@@ -168,13 +173,14 @@
     text-shadow: 0 1px 3px rgba(69, 5, 5, 0.8);
     text-align: center;
     position: absolute;
-    top: 38%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.shop_under_slide img {
+.under_slide img {
     opacity: 1;
+    height: 275px;
 }
 
 .info_wrap {
@@ -351,7 +357,7 @@
 
 .info_slider_texts {
     position: absolute;
-    top: 38%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -522,15 +528,18 @@
         padding-bottom: 16%;
     }
 
+    .allshop_slide img {
+        height: 113px;
+    }
+
     .shop_btn_wrapper {
-        top: 26%;
+        top: 18%;
         left: 21%;
     }
 
     .shop_addresses {
         left: 40%;
         top: 15px;
-        max-width: 336px;
     }
 
     .shop_number {
@@ -539,7 +548,7 @@
 
     .shop_address {
         font-size: 15px;
-        padding-left: 50px;
+        padding-left: 15px;
     }
 
     /* 神保町 */
@@ -600,7 +609,7 @@
     .info_wrap {
         background-color: #a9bfb1;
         position: relative;
-        top: -60px;
+        top: 0px;
     }
 
     .info_wrap::before {
@@ -705,7 +714,7 @@
 
     .info_slider_texts {
         position: relative;
-        top: -180px;
+        top: -55px;
     }
 
     .info_slider_text1 {

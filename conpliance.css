@@ -4,6 +4,7 @@
     background-image: url(images/back_compla.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #fdfdfd;
 }
 
 .conp_title {
@@ -19,20 +20,45 @@
 .conpliance_text_plus {
     color: #525151;
 }
+/* 
+.conpliance_title::before {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #c09f5d;
+    margin-right: 26px;
+    width: calc(100vw * 0.12);
+    position: absolute;
+    left: 0;
+} */
+
+/* .comp_title_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.title_border {
+    border-bottom: 1px solid #c09f5d;
+    width: 16.5%;
+    position: absolute;
+    left: 0;
+} */
 
 .conpliance_title {
     font-size: 18px;
     padding-bottom: 6px;
+    display: flex;
+    align-items: center;
 }
 
 .conpliance_text {
     font-size: 15px;
-    line-height: 1.2;
+    line-height: 1.8;
 }
 
 .conpliance_wrap {
     max-width: 1000px;
-    padding: 200px 10px 400px;
+    padding: 200px 30px 400px;
     margin: 0 auto;
 }
 
@@ -57,7 +83,7 @@
     display: block;
     height: 1px;
     background-color: #c09f5d;
-    margin-left: 3.5%;
+    margin-left: 26px;
     width: 165px;
 }
 
@@ -90,24 +116,6 @@
         padding: 142px 0 104px;
     }
 
-    /* .shop_nav ul {
-        height: 50%;
-    }
-
-    .header_nav li {
-        padding: 12% 0;
-    }
-
-    .header_nav li a {
-        color: #707070;
-        font-size: 15x;
-    }
-
-    .hum_nav ul li {
-        padding: 28px 0;
-        color: #707070;
-    } */
-
     .conpliance_title {
         font-weight: bold;
         display: flex;
@@ -120,7 +128,7 @@
         height: 1px;
         flex-grow: 1;
         background-color: #c09f5d;
-        margin-left: 3.5%;
+        margin-left: 26px;
     }
 
     .conpliance_title {

@@ -18,7 +18,7 @@
 }
 
 .what_is {
-    padding: 200px 0 170px;
+    padding: 100px 0 400px;
 }
 
 .lesson_imgs {
@@ -51,15 +51,15 @@
 .what_is_title {
     writing-mode: vertical-lr;
     font-size: 33px;
-    letter-spacing: 0.65em;
+    letter-spacing: 0.5em;
     position: relative;
-    left: 86.6%;
+    left: 84.6%;
     font-weight: bold;
 }
 
 .big_text {
     font-size: 84px;
-    padding-bottom: 26px;
+    padding-bottom: 10px;
     font-weight: bold;
 }
 
@@ -67,7 +67,7 @@
     writing-mode: vertical-rl;
     font-size: 20px;
     line-height: 3;
-    letter-spacing: 0.6em;
+    letter-spacing: 0.4em;
     position: relative;
     top: -700px;
     left: 50%;
@@ -238,7 +238,7 @@
 
     .under_title {
         font-size: 25px;
-        padding: 142px 0164px;
+        padding: 142px 0 164px;
     }
 
     .title_accesary {
