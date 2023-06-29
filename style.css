@@ -87,10 +87,16 @@
 .popup_yen {
     font-size: 52px;
     color: #801b30;
+    font-family: "Apple Lisung", "Calisto MT", "Bookman Old Style", Bookman,
+        "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter",
+        Georgia, serif;
 }
 
 .popup_mark {
     font-size: 25px;
+    font-family: "Apple Lisung", "Calisto MT", "Bookman Old Style", Bookman,
+        "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter",
+        Georgia, serif;
 }
 
 .popup_by {
