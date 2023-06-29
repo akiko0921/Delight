@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="popup_wrap ok">
+    <div class="popup_wrap">
         <div class="popup">
             <div class="popup_ribon">
                 <img src="images/ribon.png" alt="">
@@ -254,7 +254,7 @@
                                 <p class="passtime_title">1. スマホで簡単予約</p>
                                 <p class="passtime_point">何時でも・どこいてもスマホで簡単に予約できます。</p>
                                 <p class="passtime_text">無料体験の方は前日までにLINEで予約・会員様は30分前までにwebで予約可能です。<br>
-                                    お支払いは予約時に登録するクレジットカードのみです。（または予約時に登録したクレジットカードでのお支払いです。）</p>
+                                    お支払いは予約時に登録するクレジットカードのみです。</p>
                             </div>
                         </div>
                         <div class="passtime_item purple">
@@ -508,21 +508,9 @@
             });
         });
 
-        if ($.cookie("disappear") != "ok") {
-            $(".popup_wrap").removeClass("ok");
-        } else {
-            $(".popup_wrap").addClass("ok");
-        }
-
-        $('.popup_close').click(function () {
-            $.cookie("disappear", "ok", { expires: 1, path: "/" });
-            $(".popup_wrap").addClass("ok");
-        });
-
-
     </script>
     <script src="script.js"></script>
-    <script src="jquery.cookie.js"></script>
+
 </body>
 
 </html>

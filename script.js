@@ -27,14 +27,6 @@ $(function () {
         // fade: true,
         slidesToShow: 3,
         cssEase:"linear",
-        // responsive: [
-        //     {
-        //         breakpoint: 767,
-        //         settings: {
-        //             slidesToShow: 2.5,
-        //         },
-        //     },
-        // ],
     });
 
 
@@ -92,16 +84,6 @@ jQuery(function () {
     });
 });
 
-if($.cookie("disappear") != "ok"){
-    $(".popup_wrap").removeClass("ok");
-} else {
-    $(".popup_wrap").addClass("ok");
-}
-
-$('.popup_close').click(function(){
-    $.cookie("disappear", "ok", { expires: 1, path: "/" });
-    $(".popup_wrap").addClass("ok");
-});
 
 // 1. ページがスクロールされた時にイベントを設定する
 $(window).scroll(function () {
@@ -128,14 +110,6 @@ $(window).scroll(function () {
 });
 
 
-$(function () {
-    $(".qa_title").on("click", function () {
-        $(".qa_title").not(this).removeClass("open");
-        $(".qa_title").not(this).next().slideUp(300);
-        $(this).toggleClass("open");
-        $(this).next().slideToggle(300);
-    });
-});
 
 
 $(function () {

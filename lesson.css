@@ -18,7 +18,7 @@
 }
 
 .what_is {
-    padding: 100px 0 400px;
+    padding: 100px 0 800px;
 }
 
 .lesson_imgs {
@@ -55,6 +55,7 @@
     position: relative;
     left: 84.6%;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .big_text {
@@ -72,6 +73,7 @@
     top: -700px;
     left: 50%;
     transform: translateX(-50%);
+    white-space: nowrap;
 }
 
 .ok_title {
@@ -246,7 +248,7 @@
     }
 
     .what_is {
-        padding: 100px 0 170px;
+        padding: 100px 0 350px;
     }
 
     .lesson_img_center {

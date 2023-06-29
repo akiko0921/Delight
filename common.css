@@ -430,7 +430,7 @@ img {
     position: absolute;
     top: 20%;
     right: 7%;
-    z-index: 100;
+    z-index: 200;
 }
 
 .header_nav li {
@@ -491,6 +491,50 @@ img {
     transition: opacity 1s, visibility 1s, transform 1s;
 }
 
+.green {
+    background-color: #477658;
+}
+
+.shop_btn.green:hover {
+    background-color: #fdfdfd;
+    color: #477658;
+    transition: 0.7s;
+    opacity: 0.8;
+}
+
+.purple {
+    background-color: #7f4d72;
+}
+
+.shop_btn.purple:hover {
+    background-color: #fdfdfd;
+    color: #7f4d72;
+    transition: 0.7s;
+    opacity: 0.8;
+}
+
+.blue {
+    background-color: #303967;
+}
+
+.shop_btn.blue:hover {
+    background-color: #fdfdfd;
+    color: #303967;
+    transition: 0.7s;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: #801b30;
+}
+
+.shop_btn.red:hover {
+    background-color: #fdfdfd;
+    color: #801b30;
+    transition: 0.7s;
+    opacity: 0.8;
+}
+
 @keyframes fadeUpAnime {
     from {
         opacity: 0;
@@ -516,7 +560,8 @@ img {
 @media screen and (max-width: 767px) {
     .hum_nav,
     .header_top,
-    .header_logo {
+    .header_logo,
+    .tab_br {
         display: none;
     }
 
@@ -685,22 +730,6 @@ img {
         padding-right: 12px;
     }
 
-    .green {
-        background-color: #477658;
-    }
-
-    .purple {
-        background-color: #7f4d72;
-    }
-
-    .blue {
-        background-color: #303967;
-    }
-
-    .red {
-        background-color: #801b30;
-    }
-
     .btnline {
         padding: 5px 0;
         display: inline-block;
@@ -787,7 +816,7 @@ img {
     }
 
     .sp_nav_bottom li {
-        padding: 10px;
+        padding: 0 10px 10px;
     }
 
     .sp_br {

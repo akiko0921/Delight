@@ -49,7 +49,6 @@
 
 .shop_slide_wrapper {
     position: relative;
-    max-height: 850px;
     padding-bottom: 16%;
 }
 
@@ -187,6 +186,7 @@
     background-color: #a9bfb1;
     position: relative;
     top: -60px;
+    padding: 0 20px;
 }
 
 .info_wrap::before {
@@ -245,7 +245,7 @@
     font-weight: bold;
     z-index: 100;
     line-height: 141px;
-    left: 200px;
+    left: 100px;
     position: relative;
 }
 
@@ -254,7 +254,7 @@
     font-weight: bold;
     z-index: 100;
     line-height: 141px;
-    left: -250px;
+    left: -157px;
     position: relative;
 }
 
@@ -264,7 +264,7 @@
     width: 225px;
     height: 225px;
     top: -50px;
-    left: 100px;
+    left: 0;
 }
 
 .info_circle_r {
@@ -273,7 +273,7 @@
     width: 225px;
     height: 225px;
     top: -50px;
-    right: 100px;
+    right: 0;
 }
 
 .jinbocho_circle {
@@ -457,6 +457,7 @@
     position: relative;
     margin-top: -255px;
     top: 5px;
+    margin-left: -20px;
 }
 
 .sp_shop_back {
@@ -610,6 +611,7 @@
         background-color: #a9bfb1;
         position: relative;
         top: 0px;
+        padding: 0;
     }
 
     .info_wrap::before {
@@ -644,23 +646,36 @@
 
     .info_title_l {
         font-size: 17px;
-        max-width: 151px;
-        padding-left: 26px;
+        line-height: 90px;
+        left: 80%;
+        display: inline;
     }
 
     .info_title_r {
         font-size: 17px;
-        max-width: 151px;
-        padding-left: 26px;
-        left: 200px;
+        line-height: 90px;
+        display: inline;
+        left: 80%;
+    }
+
+    .info_circle_l {
+        width: 90px;
+        height: 90px;
+        transform: translate(-50%, 50%);
+        left: 80%;
+    }
+
+    .info_circle_r {
+        width: 90px;
+        height: 90px;
+        transform: translate(-50%, 50%);
+        left: 80%;
     }
 
     .info_circle_l,
     .info_circle_r {
         width: 90px;
         height: 90px;
-        top: 20px;
-        left: 200px;
     }
 
     .info_circle_l::after {
@@ -675,7 +690,7 @@
 
     .info_text {
         font-size: 12px;
-        max-width: 340px;
+        width: 80%;
         margin: 0 auto;
     }
 
