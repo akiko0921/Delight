@@ -167,6 +167,12 @@
     z-index: 3;
 }
 
+.shop_insta {
+    width: 50px;
+    display: block;
+    margin: -30px auto 30px;
+}
+
 .info_slider_text {
     font-size: 34px;
     text-shadow: 0 1px 3px rgba(69, 5, 5, 0.8);
@@ -550,6 +556,11 @@
     .shop_address {
         font-size: 15px;
         padding-left: 15px;
+    }
+
+    .shop_insta {
+        width: 21px;
+        margin: 10px auto 30px;
     }
 
     /* 神保町 */
