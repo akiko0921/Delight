@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
@@ -38,10 +39,14 @@
                     <p>入会を迷っている方</p>
                     <p>まずは試してみたい方</p>
                 </div>
-                <p class="popup_text"><span class="popup_text_big">都度払い</span>できます</p>
-
-                <button class="btn try_btn"><a href="lesson.html" class="btnline white_arrow"><span
-                            class="try_btn_text">まずは試してみる</span></a></button>
+                <div class="popup_middle">
+                    <div class="popup_border"><img src="images/border.png" alt=""></div>
+                    <p class="popup_text">
+                        <span class="popup_text_big">都度払い</span>できます
+                    </p>
+                </div>
+                <a href="lesson.html" class="btn try_btn"><button class="btnline long try_button white_arrow"><span
+                            class="try_btn_text">まずは試してみる</span></button></a>
             </div>
 
             <div class="popup_ribon">
@@ -180,8 +185,9 @@
                     <p class="capture_text text1">
                         天候や季節に左右されずに、壮大なプロジェクターを見ながらゴルフのグランドでゴルフクラブとボールを用いて体感的に競技することです。</p>
                     <p class="capture_text text2">ボールのスピード、軌道、ボールの回転などを検知し、プロジェクターに映像がリアルに再現され反映されます。</p>
-                    <div class="more_btn"><a href="lesson.html" class="btnline gold_arrow more"><span
-                                class="gold_text">詳しくはこちら</span></a></div>
+                    <a class="more_btn" href="lesson.html">
+                        <div class="btnline gold_arrow more"><span class="gold_text">詳しくはこちら</span></div>
+                    </a>
                 </div>
                 <p class="service_sen gray_text action">設備も充実しております</p>
                 <div class="service_slide action">
@@ -234,9 +240,9 @@
                         </p>
                     </div>
                 </div>
-                <button class="btn reserve_btn action"><a href="lesson.html" class="btnline long white_arrow"><span
-                            class="reserve_btn_text">予約はこちらから</span></a>
-                </button>
+                <a href="" class="btn reserve_btn action">
+                    <button class="btnline long white_arrow long_btn"><span
+                            class="reserve_btn_text">予約はこちらから</span></button></a>
                 <div class="service_padding"></div>
             </section>
 
@@ -314,9 +320,9 @@
                         <div class="shop_btn_wrapper">
                             <a class="shop_btn green" href="jinbocho.html">神保町店</a>
                         </div>
-                        <button class="reserve_halfbtn"><a href="https://line.me/R/ti/p/%40758gykfm"
-                                class="btnline white_arrow"><span>予約は<br>こちらから</span></a>
-                        </button>
+                        <a class="reserve_halfbtn"><button href="https://line.me/R/ti/p/%40758gykfm"
+                                class="btnline half_btn white_arrow"><span>予約は<br>こちらから</span></button>
+                        </a>
                     </div>
                 </div>
                 <div class="shop_list">
@@ -334,10 +340,9 @@
                         <div class="shop_btn_wrapper">
                             <a class="shop_btn purple" href="akasaka.html">赤坂店</a>
                         </div>
-                        <button class="reserve_halfbtn"><a href="https://line.me/R/ti/p/@375eqqlm"
-                                class="btnline white_arrow"><span>予約は<br>こちらから</span></a>
-                        </button>
-
+                        <a class="reserve_halfbtn"><button href="https://line.me/R/ti/p/@375eqqlm"
+                                class="btnline half_btn white_arrow"><span>予約は<br>こちらから</span></button>
+                        </a>
                     </div>
 
 
@@ -357,9 +362,9 @@
                         <div class="shop_btn_wrapper">
                             <a class="shop_btn blue" href="toyocho.html">東陽町店</a>
                         </div>
-                        <button class="reserve_halfbtn"><a href="https://line.me/R/ti/p/%40775yyisj"
-                                class="btnline white_arrow"><span>予約は<br>こちらから</span></a>
-                        </button>
+                        <a class="reserve_halfbtn"><button href="https://line.me/R/ti/p/%40775yyisj"
+                                class="btnline half_btn white_arrow"><span>予約は<br>こちらから</span></button>
+                        </a>
                     </div>
 
                     <div class="shop_list">
@@ -377,9 +382,9 @@
                             <div class="shop_btn_wrapper">
                                 <a class="shop_btn red" href="akasaka.html">新宿店</a>
                             </div>
-                            <button class="reserve_halfbtn"><a href="https://line.me/R/ti/p/%40812ovxja"
-                                    class="btnline white_arrow"><span>予約は<br>こちらから</span></a>
-                            </button>
+                            <a class="reserve_halfbtn"><button href="https://line.me/R/ti/p/%40812ovxja"
+                                    class="btnline half_btn white_arrow"><span>予約は<br>こちらから</span></button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -504,6 +509,15 @@
                         $(this).addClass("is-fadein");
                     }
                 });
+            });
+        });
+
+        $(function () {
+            $(".popup_wrap").show();
+            $.cookie('btnFlg') == 'on' ? $(".popup_wrap").hide() : $(".popup_wrap").show();
+            $(".popup_close").click(function () {
+                $(".popup_wrap").fadeOut();
+                $.cookie('btnFlg', 'on', { expires: 1, path: '/' }); //cookieの保存
             });
         });
 

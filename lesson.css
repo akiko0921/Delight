@@ -224,8 +224,9 @@
     display: block;
 }
 
-.reserve_btn_text {
+.lesson_btn {
     font-size: 25px;
+    margin: 18px 150px;
 }
 
 @media screen and (max-width: 767px) {
@@ -400,7 +401,8 @@
         display: block;
     }
 
-    .reserve_btn_text {
+    .lesson_btn {
         font-size: 13px;
+        margin: 10px 72px;
     }
 }

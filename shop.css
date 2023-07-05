@@ -14,11 +14,11 @@
     content: "";
     left: 50%;
     width: 572px;
-    height: 266px;
+    height: 286px;
     border-radius: 300px 300px 0 0;
     background: inherit;
     transform: translate(-50%, 50%);
-    top: -340px;
+    top: -370px;
     z-index: 1;
 }
 
@@ -147,6 +147,7 @@
     z-index: 3;
     max-width: 535px;
     margin: 0 auto;
+    left: 36px;
 }
 
 .info_shop_number {
@@ -155,7 +156,7 @@
 
 .info_shop_address {
     font-size: 18px;
-    padding-left: 3%;
+    padding-left: 18%;
     line-height: 1.2;
 }
 
@@ -168,7 +169,7 @@
 }
 
 .shop_insta {
-    width: 50px;
+    width: 42px;
     display: block;
     margin: -30px auto 30px;
 }
@@ -358,7 +359,7 @@
 }
 
 .akasaka_info_address {
-    padding-left: 17%;
+    padding-left: 10%;
 }
 
 .info_slider_texts {
@@ -410,7 +411,7 @@
 }
 
 .toyocho_info_address {
-    padding-left: 20%;
+    padding-left: 18%;
 }
 
 .toyocho_info_wrap {
@@ -559,7 +560,7 @@
     }
 
     .shop_insta {
-        width: 21px;
+        width: 32px;
         margin: 10px auto 30px;
     }
 
@@ -592,6 +593,7 @@
         display: block;
         text-align: center;
         top: 0px;
+        left: 0;
     }
 
     .info_shop_number {

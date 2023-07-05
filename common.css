@@ -90,6 +90,13 @@ img {
     display: inline-block;
     text-decoration: none;
     outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.long_btn {
+    margin: 18px 210px;
 }
 
 /*線の設定*/
@@ -732,9 +739,10 @@ img {
 
     .btnline {
         padding: 5px 0;
-        display: inline-block;
-        text-decoration: none;
-        outline: none;
+    }
+
+    .long_btn {
+        margin: 16px 108px;
     }
 
     /*矢印の設定*/

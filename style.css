@@ -44,9 +44,9 @@
 
 .popup {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
 }
 
 .popup {
@@ -90,6 +90,7 @@
     font-family: "Apple Lisung", "Calisto MT", "Bookman Old Style", Bookman,
         "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter",
         Georgia, serif;
+    text-align: center;
 }
 
 .popup_mark {
@@ -136,6 +137,17 @@
     margin: 31px 0 25px;
 }
 
+.popup_middle {
+    position: relative;
+}
+
+.popup_border {
+    width: 24px;
+    position: absolute;
+    top: -16px;
+    left: -10px;
+}
+
 .popup_ribon {
     width: 38px;
     padding: 0 13px;
@@ -145,6 +157,11 @@
     width: 326px;
     height: 47px;
     margin: 0 auto;
+    display: block;
+}
+
+.try_button {
+    margin: 2px 104px;
 }
 
 .main_visual {
@@ -231,6 +248,10 @@
 
 .fly_line::after {
     animation: none;
+}
+
+.fly_line {
+    margin: 0;
 }
 
 .scrolldown1 {
@@ -335,6 +356,10 @@
 .taiken_line::after {
     animation: none;
     right: -33px;
+}
+
+.taiken_line {
+    margin: 0;
 }
 
 .container {
@@ -478,6 +503,7 @@
     height: 73px;
     border-radius: 0 0 44px 0;
     margin: 30px auto;
+    display: block;
 }
 
 .more {
@@ -749,6 +775,7 @@
 
 .half_btn {
     font-size: 22px;
+    margin: 18px 63px;
 }
 
 .contact {
@@ -1084,7 +1111,7 @@
         padding: 5px 9px;
     }
 
-    .popup_idea p:nth-child(1) {
+    .popup_idea p:first-child {
         width: 139px;
         height: 43px;
         border-radius: 30px 30px;
@@ -1107,6 +1134,11 @@
     .popup_text {
         font-size: 16px;
         margin: 19px 0 9px;
+    }
+
+    .popup_border {
+        width: 13px;
+        left: -5px;
     }
 
     .try_btn {
@@ -1143,6 +1175,10 @@
         padding: 1px;
         z-index: 20;
         transform: translate(8%, -50%);
+    }
+
+    .try_button {
+        margin: 0px 32px;
     }
 
     .toyoda {
@@ -1455,6 +1491,7 @@
 
     .half_btn {
         font-size: 12px;
+        margin: 5px 24px;
     }
 
     .contact_text {
