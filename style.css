@@ -12,14 +12,8 @@
     transition: 0.4s ease;
 }
 
-.popup_wrap.ok {
-    opacity: 0;
-    visibility: hidden;
-    z-index: -1;
-}
-
 .popup_close {
-    width: 20px;
+    width: 24px;
     height: 24px;
     position: absolute;
     top: 23px;
@@ -39,7 +33,7 @@
     transform: rotate(45deg);
 }
 .popup_close::after {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) translateY(-1px);
 }
 
 .popup {
@@ -49,14 +43,23 @@
     transform: translate(-50%, 50%);
 }
 
-.popup {
+/* .popup {
     max-width: 900px;
     background-color: #eadecc;
     display: flex;
     justify-content: space-around;
     align-items: center;
+} */
+
+.popup_containar {
+    position: relative;
 }
 
+.popup_img {
+    width: 750px;
+    margin: 0 auto;
+}
+/* 
 .popup_money {
     width: 221px;
     height: 221px;
@@ -77,10 +80,10 @@
         circle at center,
         #801b30 20%,
         transparent 20%
-    ); /* 点の色とサイズ調整 */
-    background-repeat: repeat-x; /* 横方向に繰り返し */
-    background-size: 1em 0.3em; /* 点の間隔とサイズ調整 */
-    padding-top: 0.4em; /* 縦方向の位置調整 */
+    ); 
+    background-repeat: repeat-x; 
+    background-size: 1em 0.3em; 
+    padding-top: 0.4em; 
     letter-spacing: 0;
 }
 
@@ -151,17 +154,20 @@
 .popup_ribon {
     width: 38px;
     padding: 0 13px;
-}
+} */
 
 .try_btn {
-    width: 326px;
-    height: 47px;
-    margin: 0 auto;
+    width: 280px;
+    height: 40px;
     display: block;
+    position: absolute;
+    bottom: 12px;
+    left: 360px;
 }
 
 .try_button {
-    margin: 2px 104px;
+    margin: 1px 76px;
+    padding: 6px;
 }
 
 .main_visual {
@@ -843,7 +849,8 @@
 .sp_main,
 .popup_sp_ribon_top,
 .popup_sp_ribon_bottom,
-.sp_shop_back {
+.sp_shop_back,
+.sp_popup_img {
     display: none;
 }
 
@@ -1021,25 +1028,18 @@
     }
 
     .popup_wrap {
-        display: none;
-        width: 100%;
-        height: 100%;
-        background: rgba(232, 232, 232, 0.45);
-        position: fixed;
         top: 0;
         left: 0;
-        z-index: 10000;
-        transition: 0.4s ease;
     }
 
     .popup_close {
-        width: 13px;
+        width: 15px;
         height: 15px;
-        top: 10px;
+        top: 14px;
         right: 10px;
     }
 
-    .popup {
+    /* .popup {
         max-width: 280px;
         background-color: #eadecc;
         display: flex;
@@ -1075,17 +1075,6 @@
         padding-top: 35px;
         text-align: center;
         font-size: 13px;
-    }
-
-    .popup_dots {
-        background-image: radial-gradient(
-            circle at center,
-            #801b30 20%,
-            transparent 20%
-        ); /* 点の色とサイズ調整 */
-        background-repeat: repeat-x; /* 横方向に繰り返し */
-        background-size: 1em 0.3em; /* 点の間隔とサイズ調整 */
-        padding-top: 0.4em; /* 縦方向の位置調整 */
     }
 
     .popup_yen {
@@ -1139,6 +1128,15 @@
     .popup_border {
         width: 13px;
         left: -5px;
+    } */
+
+    .popup_img {
+        display: none;
+    }
+
+    .sp_popup_img {
+        display: block;
+        width: 280px;
     }
 
     .try_btn {
@@ -1146,6 +1144,9 @@
         height: 32px;
         border-radius: 0 0 18px 0;
         font-size: 10px;
+        bottom: 40px;
+        transform: translateX(-50%);
+        left: 50%;
     }
 
     .taiken_btn {
@@ -1178,7 +1179,8 @@
     }
 
     .try_button {
-        margin: 0px 32px;
+        margin: 0px 34px;
+        padding: 3px 0;
     }
 
     .toyoda {

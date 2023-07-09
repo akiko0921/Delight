@@ -21,14 +21,21 @@
 <body>
     <div class="popup_wrap">
         <div class="popup">
-            <div class="popup_ribon">
+            <div class="popup_containar">
+                <div class="popup_img">
+                    <img src="images/popup.JPG" alt="">
+                </div>
+                <div class="sp_popup_img">
+                    <img src="images/sp_popup.JPG" alt="">
+                </div>
+                <!-- <div class="popup_ribon">
                 <img src="images/ribon.png" alt="">
             </div>
             <div class="popup_sp_ribon_top">
                 <img src="images/sp_ribon.png" alt="">
-            </div>
-            <div class="popup_close"></div>
-            <div class="popup_money">
+            </div> -->
+                <div class="popup_close"></div>
+                <!-- <div class="popup_money">
                 <p class="popup_money_text"><span class="popup_dots  gray_text">入会不要</span></p>
                 <p class="popup_yen"><span class="popup_mark gray_text">¥</span>3,300<span
                         class="popup_by gray_text">/回</span></p>
@@ -44,17 +51,18 @@
                     <p class="popup_text">
                         <span class="popup_text_big">都度払い</span>できます
                     </p>
-                </div>
+                </div> -->
                 <a href="shop.html" class="btn try_btn"><button class="btnline long try_button white_arrow"><span
                             class="try_btn_text">まずは試してみる</span></button></a>
             </div>
-
-            <div class="popup_ribon">
-                <img src="images/ribon.png" alt="">
-            </div>
-            <div class="popup_sp_ribon_top">
-                <img src="images/sp_ribon.png" alt="">
-            </div>
+            <!-- 
+        <div class="popup_ribon">
+            <img src="images/ribon.png" alt="">
+        </div>
+        <div class="popup_sp_ribon_top">
+            <img src="images/sp_ribon.png" alt="">
+        </div>
+    </div> -->
         </div>
     </div>
 
@@ -519,6 +527,11 @@
                 $(".popup_wrap").fadeOut();
                 $.cookie('btnFlg', 'on', { expires: 1, path: '/' }); //cookieの保存
             });
+        });
+        $(document).on('click touched', function (event) {
+            if (!$(event.target).closest('.popup').length) {
+                $('.popup_wrap').fadeOut();
+            }
         });
 
     </script>
