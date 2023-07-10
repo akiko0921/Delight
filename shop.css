@@ -125,7 +125,7 @@
 .shop_top {
     position: relative;
     z-index: 3;
-    top: -100px;
+    top: -80px;
 }
 
 .shop_title {
@@ -133,7 +133,7 @@
     font-size: 41px;
 }
 
-.jinbocho_accesary {
+.jimbocho_accesary {
     width: 137px;
     margin: 0 auto;
     position: relative;
@@ -146,8 +146,8 @@
     top: -105px;
     z-index: 3;
     max-width: 535px;
-    margin: 16px auto;
-    left: 36px;
+    margin: 36px auto;
+    left: 16px;
 }
 
 .info_shop_number {
@@ -156,7 +156,7 @@
 
 .info_shop_address {
     font-size: 18px;
-    padding-left: 18%;
+    padding-left: 16%;
     line-height: 1.2;
 }
 
@@ -283,7 +283,7 @@
     right: 0;
 }
 
-.jinbocho_circle {
+.jimbocho_circle {
     border: 1px solid #367755;
 }
 
@@ -305,7 +305,7 @@
     z-index: 2;
 }
 
-.jinbocho_circle::after {
+.jimbocho_circle::after {
     background-color: #a9bfb1;
 }
 
@@ -357,16 +357,17 @@
 .akasaka_information {
     background-color: #7f4d72;
 }
-
+/* 
 .akasaka_info_address {
     padding-left: 10%;
-}
+} */
 
 .info_slider_texts {
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .info_slider_text1,
@@ -408,10 +409,6 @@
 
 .toyocho_information {
     background-color: #303967;
-}
-
-.toyocho_info_address {
-    padding-left: 18%;
 }
 
 .toyocho_info_wrap {
@@ -585,7 +582,7 @@
         text-align: center;
     }
 
-    .jinbocho_accesary {
+    .jimbocho_accesary {
         display: none;
     }
 
@@ -616,7 +613,7 @@
         font-size: 16px;
     }
 
-    .jinbocho_slide img {
+    .jimbocho_slide img {
         opacity: 1;
     }
 
