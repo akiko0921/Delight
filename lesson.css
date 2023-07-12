@@ -215,9 +215,10 @@
     background: #c09f5c;
     border-radius: 0 0 30px 0;
     border: none;
+    text-align: center;
 }
 
-.reserve_btn {
+.lesson_eserve_btn {
     width: 658px;
     height: 100px;
     margin: 90px auto 187px;
@@ -226,7 +227,7 @@
 
 .lesson_btn {
     font-size: 25px;
-    margin: 18px 150px;
+    margin: 18px;
 }
 
 @media screen and (max-width: 767px) {
@@ -394,7 +395,7 @@
         border: none;
     }
 
-    .reserve_btn {
+    .lesson_eserve_btn {
         width: 329px;
         height: 49px;
         margin: 90px auto 187px;
@@ -403,6 +404,6 @@
 
     .lesson_btn {
         font-size: 13px;
-        margin: 10px 72px;
+        margin: 10px;
     }
 }

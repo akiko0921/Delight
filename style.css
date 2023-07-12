@@ -37,10 +37,9 @@
 }
 
 .popup {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    position: relative;
+    width: 750px;
+    margin: 150px auto;
 }
 
 /* .popup {
@@ -51,14 +50,6 @@
     align-items: center;
 } */
 
-.popup_containar {
-    position: relative;
-}
-
-.popup_img {
-    width: 750px;
-    margin: 0 auto;
-}
 /* 
 .popup_money {
     width: 221px;
@@ -166,7 +157,6 @@
 }
 
 .try_button {
-    margin: 1px 76px;
     padding: 6px;
 }
 
@@ -583,6 +573,7 @@
     background: #c09f5c;
     border-radius: 0 0 30px 0;
     border: none;
+    text-align: center;
 }
 
 .reserve_btn {
@@ -777,11 +768,12 @@
     left: 50%;
     transform: translateX(-50%);
     border: none;
+    text-align: center;
 }
 
 .half_btn {
     font-size: 22px;
-    margin: 18px 63px;
+    margin: 18px;
 }
 
 .contact {
