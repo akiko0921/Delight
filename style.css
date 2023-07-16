@@ -207,7 +207,7 @@
 
 .fly_btn {
     position: absolute;
-    top: 65%;
+    bottom: 5%;
     left: -6px;
     border: none;
     z-index: 800;
@@ -880,7 +880,6 @@
     }
 
     .fly_btn {
-        top: 60%;
         letter-spacing: 0.2em;
         padding: 0px 38px 10px 18px;
         left: -20px;
