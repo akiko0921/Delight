@@ -199,21 +199,28 @@
     writing-mode: vertical-rl;
     font-size: 16px;
     position: absolute;
-    top: 11.5%;
+    top: 12%;
     left: 13%;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
     z-index: 900;
 }
 
 .fly_btn {
     position: absolute;
-    top: 74%;
+    top: 65%;
+    left: -6px;
+    border: none;
+    z-index: 800;
+    background-color: transparent;
+    /* padding: 15px 60px 15px 24px;
     background-color: #fdfdfd;
     border-radius: 0 75px 75px 0;
-    border: none;
-    letter-spacing: 0.2em;
-    z-index: 800;
-    padding: 15px 60px 15px 24px;
+    letter-spacing: 0.2em; */
+}
+
+.fly_btn_link {
+    width: 35.7%;
+    display: block;
 }
 
 .dragon {
@@ -331,7 +338,7 @@
 }
 
 .top_hum_nav.hum_nav.active {
-    right: 26px;
+    right: 0px;
 }
 
 .taiken_btn {
@@ -853,7 +860,8 @@
 .popup_sp_ribon_top,
 .popup_sp_ribon_bottom,
 .sp_shop_back,
-.sp_popup_img {
+.sp_popup_img,
+.sp_fly_btn_link {
     display: none;
 }
 
@@ -872,9 +880,10 @@
     }
 
     .fly_btn {
-        top: 74%;
+        top: 60%;
         letter-spacing: 0.2em;
         padding: 0px 38px 10px 18px;
+        left: -20px;
     }
 
     .dragon {
@@ -1174,12 +1183,20 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 162px;
-        height: 162px;
+        width: 43.2%;
+        /* height: 162px;
         border-radius: 50%;
         padding: 1px;
         z-index: 20;
-        transform: translate(8%, -50%);
+        transform: translate(8%, -50%); */
+    }
+
+    .sp_fly_btn_link {
+        display: block;
+    }
+
+    .fly_btn_link {
+        display: none;
     }
 
     .try_button {
